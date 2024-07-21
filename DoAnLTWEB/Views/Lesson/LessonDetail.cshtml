@@ -1,0 +1,45 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+@model DoAnLTWEB.Models.BaiGiang
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết bài giảng</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/style.css" rel="stylesheet">
+    <link href="~/Content/css/styleLesson.css" rel="stylesheet">
+</head>
+<body>
+    <section class="course_details_area" style="margin-top: 60px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 course_details_left">
+                    <div class="content_wrapper">
+                        <h4 class="title_top">@Html.DisplayFor(model => model.TieuDeBG)</h4>
+                    </div>
+                    <div class="main_image">
+                        <iframe style="width: 100%" height="500" src="@Html.DisplayFor(model => model.Video)"
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 right-contents" style="margin-top: 100px;">
+                    <div class="sidebar_top">
+                        <h4 class="title_top" style="margin-top: 0;">Nội dung bài giảng</h4>
+                        <div class="content">
+                            @Html.DisplayFor(model => model.NoiDungBG)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

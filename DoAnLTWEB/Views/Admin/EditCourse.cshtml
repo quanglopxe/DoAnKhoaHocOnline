@@ -1,0 +1,96 @@
+﻿@model DoAnLTWEB.Models.KhoaHoc
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Chỉnh sửa khóa học</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">        
+        <h4>@Html.DisplayFor(model => model.TenKH)</h4>
+        <hr />
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="row">
+            <div class="col-6">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.MaKH, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.MaKH, new { @class = "form-control", @readonly = "readonly" })
+                        @Html.ValidationMessageFor(model => model.MaKH, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.TenKH, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.TenKH, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.TenKH, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Picture, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.Picture, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.Picture, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.GiaKhoaHoc, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.GiaKhoaHoc, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.GiaKhoaHoc, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.MoTaKH, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextAreaFor(model => model.MoTaKH, new { @class = "form-control describe-area", style = "height: 200px; width: 500px;" })
+                        @Html.ValidationMessageFor(model => model.MoTaKH, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-6">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.TenMonHoc, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.TenMonHoc, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.TenMonHoc, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.GiangVien, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.GiangVien, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(model => model.GiangVien, "", new { @class = "text-danger" })
+                    </div>
+                </div>               
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" class="btn btn-success">Lưu</button>
+                <a href="@Url.Action("AdminCourse")" class="btn btn-primary">Quay lại</a>
+            </div>
+        </div>
+    </div>
+}
+
+
+<style>
+    .makh{
+        display: none;
+    }
+</style>

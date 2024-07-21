@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "CourseWithSubjectTitle";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+@model IEnumerable<DoAnLTWEB.Models.KhoaHoc>
+<body style="position:relative;top:65px">
+    <h2 style="text-align:center">KHÓA HỌC THEO TÊN MÔN HỌC</h2>
+    <h4 style="text-align:center">(@ViewBag.TenMH)</h4>
+    <div class="container-fluid row">
+
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4">
+                <div class="card" style="width: 300px; margin: 10px 0px; text-align: center; ">
+                    <img class="card-img-top" src="~/Content/Images/@item.Picture" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <p class="card-text">@item.TenKH</p>
+                        <a href="/Lesson/Lesson?MaKH=@item.MaKH" style="text-decoration:none">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+        }
+    </div>
+
+
+</body>

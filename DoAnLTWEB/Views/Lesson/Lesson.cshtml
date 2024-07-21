@@ -1,0 +1,106 @@
+﻿@{ 
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+    DoAnLTWEB.Models.KhoaHoc khoahoc = (DoAnLTWEB.Models.KhoaHoc) ViewData["KhoaHoc"];
+    bool isRegisterCourse = (bool)ViewData["IsRegisterCourse"];
+}
+
+@model IEnumerable<DoAnLTWEB.Models.BaiGiang>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài giảng</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/style.css" rel="stylesheet">
+    <link href="~/Content/css/styleLesson.css" rel="stylesheet">
+</head>
+<body>
+    <section class="course_details_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 course_details_left">
+                    <div class="content_wrapper">
+                        <h4 class="title">Nội dung khóa học</h4>
+                        <div class="content">
+                            <ul class="course_list">
+                                @foreach (var baiGiang in Model)
+                                {
+                                    <li class="justify-content-between align-items-center d-flex">
+                                        <p><b>@baiGiang.ThuTuBaiHoc .</b> @baiGiang.TieuDeBG</p>
+                                        @if (isRegisterCourse)
+                                        {
+                                            <a href="/Lesson/LessonDetail?MaBG=@baiGiang.MaBG" class="btn_2 text-uppercase">Xem chi tiết</a>
+                                        }
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 right-contents">
+                    @if (khoahoc != null)
+                    {
+                        <div class="sidebar_top">
+                            <ul>
+                                <li>
+                                    <div class="justify-content-between d-flex" href="#">
+                                        <p>Tên khóa học</p>
+                                        <span class="color">@khoahoc.TenKH</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="justify-content-between d-flex" href="#">
+                                        <p>Giảng Viên </p>
+                                        <span>@khoahoc.GiangVien</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="justify-content-between d-flex" href="#">
+                                        <p>Giá </p>
+                                        <span>@khoahoc.GiaKhoaHoc</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="justify-content-between d-flex" href="#">
+                                        <p>Ngày bắt đầu </p>
+                                        <span>@String.Format("{0:dd/MM/yyyy}", khoahoc.NgayBD)</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="justify-content-between d-flex" href="#">
+                                        <p>Ngày kết thúc </p>
+                                        <span>@String.Format("{0:dd/MM/yyyy}", khoahoc.NgayKT)</span>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            @if (Session["User"] != null && !isRegisterCourse)
+                            {
+                                <a href="@Url.Action("ThemMyCourses", "MyCourses", new {@cID = khoahoc.MaKH, @strURL = Request.Url.ToString()})" class="btn_1 d-block">Đăng ký khóa học</a>
+                            }
+                            else if (Session["User"] == null)
+                            {
+                                <a href="@Url.Action("Login", "User")" class="btn_1 d-block">Đăng ký khóa học</a>
+                            }
+                            </div>
+                    }
+
+                    <h4 class="title">Đánh giá</h4>
+                    <div class="content">
+                        <div class="feedeback">
+                            <h6>Nhận xét của bạn</h6>
+                            <textarea name="feedback" class="form-control" cols="10" rows="10"></textarea>
+                            <div class="mt-10 text-right">
+                                <a href="#" class="btn_1">Gửi</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

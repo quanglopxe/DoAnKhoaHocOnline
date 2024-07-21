@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Course";
+    Layout = "~/Views/Shared/_LayoutHome.cshtml";
+}
+@model IEnumerable<DoAnLTWEB.Models.KhoaHoc>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Thêm thư viện jQuery Toast Plugin -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-toast-plugin/1.3.2/jquery.toast.min.js"></script>
+
+@if (ViewBag.Message != null)
+{
+    <script>
+        $(document).ready(function() {
+            $.toast({
+                heading: 'Success',
+                text: '@ViewBag.Message',
+                showHideTransition: 'fade',
+                position: 'top-right',
+                icon: 'success',
+                hideAfter: 2000,                
+            });
+        });
+    </script>
+}
+
+<h2 style="text-align:center">LIST COURSE</h2>
+
+<div class="container-fluid row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4">
+            <div class="card" style="width: 200px; margin: 10px 0px; text-align: center; ">
+                <img class="card-img-top" src="~/Content/Images/@item.Picture" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <p class="card-text">@item.TenKH</p>
+                    <button class="btn btn-primary" onclick="viewDetails('@item.MaKH')">Xem chi tiết</button>
+                </div>
+            </div>
+        </div>
+
+    }
+</div>
+<script>
+    function viewDetails(maKH) {
+        window.location.href = "/Lesson/Lesson?MaKH=" + maKH;
+    }
+</script>
+
