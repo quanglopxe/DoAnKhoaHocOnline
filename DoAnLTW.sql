@@ -48,6 +48,7 @@ create table BaiGiang
 	MaKH varchar(11),
 	ThuTuBaiHoc int,
 	Video varchar(500),
+	TrangThai bit default 1,
 	constraint pk_baigiang primary key (MaBG)
 )
 
@@ -130,6 +131,23 @@ create table rateKhoaHoc
 	constraint pk_rateKH primary key (ID)
 )
 
+create table CourseCart
+(
+	MaKH varchar(11),
+	MaND varchar(11),
+	TenKH nvarchar(255) not null,
+	MoTaKH nvarchar(255),
+	GiangVien nvarchar(100) not null,
+	NgayBD date,
+	NgayKT date,
+	GiaKhoaHoc money,
+	TenMonHoc nvarchar(255),
+	Picture varchar(50),
+	SoLuong int,
+	primary key (MaKH, MaND),
+	constraint FK_CourseCart_Course foreign key (MaKH) references KhoaHoc (MaKH),
+	constraint FK_CourseCart_NguoiDung foreign key (MaND) references NguoiDung (MaND)
+)
 alter table rateKhoaHoc
 add constraint fk_rateKH_KH foreign key (MaKH) references KhoaHoc(MaKH)
 
@@ -190,9 +208,8 @@ values
 ('KH2023009',N'Khóa học Lập trình JavaSript',N'Khóa học này giúp bạn tìm hiểu và sử dụng thành thạo ngôn ngữ JavaSript','f8chanel','01/11/2023','31/12/2023',149000,N'Ngôn ngữ JavaSript','cs2.png'),
 ('KH2023010',N'Khóa học Bootstrap',N'Khóa học này giúp bạn tìm hiểu và sử dụng Bootstrap','f8chanel','01/11/2023','31/12/2023',149000,N'Giao diện Bootstrap','Bootstrap.png')
 
-
 set dateformat dmy
-insert into BaiGiang
+insert into BaiGiang (MaBG, TieuDeBG, NoiDungBG, MaKH, ThuTuBaiHoc, Video)
 values 
 --ngôn ngữ c 
 ('BG20230001',N'Bài Mở Đầu Về Lập Trình C',N'Kiểu Dữ Liệu Và Vào Ra Trong Ngôn Ngữ Lập Trình C','KH2023001',1,'https://www.youtube.com/watch?v=vpqMmfkSAMo&list=PLux-_phi0Rz2TB5D16sJzy3MgOht3IlND&ab_channel=28tech'),
@@ -296,6 +313,7 @@ VALUES
 
 
 
+
 -- DTB >= 8 là Giỏi, DTB >= 6.5 và < 8 là Khá, DTB >= 5 và < 6.5 là Trung Bình, DTB >= 4 và < 5 là Yếu, DTB < 4 là Kém
 set dateformat dmy
 
@@ -305,6 +323,7 @@ select * from nguoidung
 select * from HoaDonDky
 select * from ChiTietHoaDon
 select * from BaiGiang
+select * from CourseCart
 
 --store procedure
 --search

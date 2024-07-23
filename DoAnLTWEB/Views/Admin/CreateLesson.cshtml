@@ -1,0 +1,104 @@
+﻿@model DoAnLTWEB.Models.BaiGiang
+@{
+    ViewBag.Title = "CreateLesson";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<h2>Thêm mới bài giảng cho khóa học</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="form-group">
+        <label>Tiêu đề bài giảng</label>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.TieuDeBG, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.TieuDeBG, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Nội dung bài giảng</label>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.NoiDungBG, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.NoiDungBG, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group" style="display:none">
+        <label>Mã khóa học</label>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.MaKH, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.MaKH, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Thứ tự bài học</label>
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.ThuTuBaiHoc, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.ThuTuBaiHoc, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Bài giảng</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="VideoType" value="file" checked>
+            <label class="form-check-label" for="exampleRadios1">
+                Tải video lên
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="VideoType" value="youtube">
+            <label class="form-check-label" for="exampleRadios2">
+                Link video YouTube (free)
+            </label>
+        </div>
+    </div>
+
+    <div id="videoFileForm" class="form-group">
+        <label>Tải video lên</label>
+        <div class="col-md-10">
+            <input type="file" name="videoFile" class="form-control" />
+            @Html.ValidationMessageFor(model => model.Video, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div id="youtubeForm" class="form-group" style="display: none;">
+        <label>Link video YouTube (free)</label>
+        <div class="col-md-10">
+            <input type="text" name="youtubeLink" class="form-control" />
+            @Html.ValidationMessageFor(model => model.Video, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn btn-success">Thêm mới</button>
+            <a href="@Url.Action("AdminLesson")" class="btn btn-primary">Quay lại</a>
+        </div>
+    </div>
+</div>
+}
+
+<script>
+    $(document).ready(function () {
+        $('input[name="VideoType"]').on('change', function () {
+            if (this.value === 'file') {
+                $('#videoFileForm').show();
+                $('#youtubeForm').hide();
+            } else {
+                $('#videoFileForm').hide();
+                $('#youtubeForm').show();
+            }
+        });
+    });
+</script>
+

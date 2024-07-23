@@ -5,7 +5,7 @@
 }
 
 @using DoAnLTWEB.Models;
-@model List<MyCourses>
+@model List<CourseCart>
 <style>
     a {
         text-decoration: none;
@@ -34,20 +34,19 @@
                     @foreach (var item in Model)
                     {
                         <tr>
-                            <td width="12%">@item.sMaKH</td>
-                            <td width="20%">@item.sTenKH</td>
-                            <td width="12%">@item.sGV</td>
-                            <td width="16%">@item.sStartDate</td>
-                            <td width="16%">@item.sEndDate</td>
-                            <td width="16%"><img src="~/Content/Images/@item.sAnh" width="80%" /></td>
-                            @using (Html.BeginForm("CapNhatMyCourses", "MyCourses", new { MaKH = item.sMaKH }))
-                            {
-                                <td width="22%">@String.Format("{0:0,0}", item.dDonGia)</td>
-                                @*<td width="22%">@String.Format("{0:0,0}", item.dThanhTien)</td>*@
-                                <td><a href="/Lesson/Lesson?MaKH=@item.sMaKH" class="btn btn-primary">Details</a></td>
-                                <td><a href="/MyCourses/XoaMyCourses?MaKH=@item.sMaKH" class="btn btn-danger">Delete</a></td>
+                            <td width="12%">@item.MaKH</td>
+                            <td width="20%">@item.TenKH</td>
+                            <td width="12%">@item.GiangVien</td>
+                            <td width="16%">@item.NgayBD.Value.ToString("dd/MM/yyyy")</td>
+                            <td width="16%">@item.NgayKT.Value.ToString("dd/MM/yyyy")</td>
+                            <td width="16%"><img src="~/Content/Images/@item.Picture" width="80%" /></td>
+                            @*@using (Html.BeginForm("CapNhatMyCourses", "MyCourses", new { MaKH = item.MaKH }))
+                            {*@
+                                <td width="22%">@String.Format("{0:0,0}", item.GiaKhoaHoc)</td>                                
+                                <td><a href="/Lesson/Lesson?MaKH=@item.MaKH" class="btn btn-primary">Details</a></td>
+                                <td><a href="/MyCourses/XoaMyCourses?MaKH=@item.MaKH" class="btn btn-danger">Delete</a></td>
 
-                            }
+                            @*}*@
                         </tr>
 
                     }

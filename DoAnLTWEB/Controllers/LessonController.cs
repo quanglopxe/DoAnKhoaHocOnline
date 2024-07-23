@@ -7,6 +7,8 @@ using System.Web.Mvc;
 using System.Linq;
 using System.Text.RegularExpressions;
 using DoAnLTWEB.Filter;
+using PagedList;
+using System.Web;
 
 
 namespace DoAnLTWEB.Controllers
@@ -18,15 +20,18 @@ namespace DoAnLTWEB.Controllers
         {
             db = _db;
         }
-        public ActionResult Lesson(string maKH)
+        public ActionResult Lesson(string maKH, int? page)
         {
             try
             {
-                List<BaiGiang> listBaiGiang = db.BaiGiangs.Where(c => c.MaKH == maKH).ToList();
+                int pageSize = 10;
+                int pageNumber = (page ?? 1);
+                var listBaiGiang = db.BaiGiangs.Where(c => c.MaKH == maKH).ToPagedList(pageNumber,pageSize);
                 ViewData["IsRegisterCourse"] = false;
                 if (listBaiGiang.Count > 0)
                 {
                     ViewData["KhoaHoc"] = listBaiGiang.First().KhoaHoc;
+                    ViewBag.MaKH = maKH;
                     NguoiDung nguoiDung = (NguoiDung)Session["User"];
                     KhoaHoc course = db.KhoaHocs.FirstOrDefault(c => c.MaKH == maKH);
                     var listMaKH = Session["CourseIds"] as List<string>;                    
@@ -88,5 +93,6 @@ namespace DoAnLTWEB.Controllers
 
             return newLink;
         }
+        
     }
 }

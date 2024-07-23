@@ -258,6 +258,8 @@
     <Content Include="Views\Course\CourseWithSearchString.cshtml" />
     <Content Include="Views\Course\RegisterdCourses.cshtml" />
     <Content Include="Views\Course\RegisterdCoursesPartial.cshtml" />
+    <Content Include="Views\Admin\AdminLesson.cshtml" />
+    <Content Include="Views\Admin\CreateLesson.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -267,6 +269,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\LessonVideo\" />
     <Folder Include="Views\Payment\" />
   </ItemGroup>
   <ItemGroup>

@@ -3,7 +3,7 @@
     ViewBag.Title = "Course";
     Layout = "~/Views/Shared/_LayoutHome.cshtml";
 }
-@model IEnumerable<DoAnLTWEB.Models.KhoaHoc>
+@model PagedList.IPagedList<DoAnLTWEB.Models.KhoaHoc>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- Thêm thư viện jQuery Toast Plugin -->
@@ -20,7 +20,7 @@
                 showHideTransition: 'fade',
                 position: 'top-right',
                 icon: 'success',
-                hideAfter: 2000,                
+                hideAfter: 2000,
             });
         });
     </script>
@@ -42,6 +42,40 @@
         </div>
 
     }
+    <!--Phân trang-->
+    <div>
+        @if (Model.PageCount > 1)
+        {
+            <ul class="pagination justify-content-center">
+                @if (Model.PageNumber > 1)
+                {
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("Course", new { page = 1 })"><i class="bi bi-chevron-double-left"></i></a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("Course", new { page = Model.PageNumber - 1 })"><i class="bi bi-chevron-left"></i></a>
+                    </li>
+                }
+
+                @for (int i = Math.Max(1, Model.PageNumber - 2); i <= Math.Min(Model.PageCount, Model.PageNumber + 2); i++)
+                {
+                    <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                        <a class="page-link" href="@Url.Action("Course", new { page = i })">@i</a>
+                    </li>
+                }
+
+                @if (Model.PageNumber < Model.PageCount)
+                {
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("Course", new { page = Model.PageNumber + 1 })"><i class="bi bi-chevron-right"></i></a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("Course", new { page = Model.PageCount })"><i class="bi bi-chevron-double-right"></i></a>
+                    </li>
+                }
+            </ul>
+        }
+    </div>
 </div>
 <script>
     function viewDetails(maKH) {

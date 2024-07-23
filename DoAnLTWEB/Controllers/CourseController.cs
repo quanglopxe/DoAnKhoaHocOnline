@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using DoAnLTWEB.Models;
+using PagedList;
 
 namespace DoAnLTWEB.Controllers
 {
@@ -19,10 +20,11 @@ namespace DoAnLTWEB.Controllers
         }
         //
         // GET: /Course/        
-        public ActionResult Course()
+        public ActionResult Course(int? page)
         {
-            List<KhoaHoc> listCourse = new List<KhoaHoc>();
-            listCourse = db.KhoaHocs.Where(c => c.TrangThai == true).ToList();
+            int pageSize = 9;
+            int pageNumber = (page ?? 1);            
+            var listCourse = db.KhoaHocs.Where(c => c.TrangThai == true).ToPagedList(pageNumber,pageSize);
             if (Session["SuccessMessage"] != null)
             {
                 ViewBag.Message = Session["SuccessMessage"].ToString();

@@ -86,10 +86,9 @@ namespace DoAnLTWEB.Controllers
                 foreach(var kh in listKH)
                 {
                     kh.NgayBD = DateTime.Now;
-                    kh.NgayKT = DateTime.Now.AddMonths(6);                    
-                    db.SubmitChanges();
+                    kh.NgayKT = DateTime.Now.AddMonths(6);                                        
                 }
-                
+                db.SubmitChanges();
                 return RedirectToAction("Course","Course");
             }
             else
@@ -139,9 +138,9 @@ namespace DoAnLTWEB.Controllers
                     cttt.MaKH = item.sMaKH;
                     cttt.SoTien = item.dDonGia;
                     cttt.PhuongThuc = "Chuyển khoản";
-                    db.ChiTietHoaDons.InsertOnSubmit(cttt);
-                    db.SubmitChanges();
+                    db.ChiTietHoaDons.InsertOnSubmit(cttt);                    
                 }
+                db.SubmitChanges();
                 Session["MyCourses"] = null;
                 return RedirectToAction("VnPayPayment");
             }

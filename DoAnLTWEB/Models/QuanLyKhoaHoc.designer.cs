@@ -21,8 +21,9 @@ namespace DoAnLTWEB.Models
 	using System.ComponentModel;
 	using System;
     using System.ComponentModel.DataAnnotations;
-	
-	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="DB_BANKHOAHOC_ONLINE")]
+    using System.Web.WebPages;
+
+    [global::System.Data.Linq.Mapping.DatabaseAttribute(Name="DB_BANKHOAHOC_ONLINE")]
 	public partial class QuanLyKhoaHocDataContext : System.Data.Linq.DataContext
 	{
 		
@@ -42,6 +43,9 @@ namespace DoAnLTWEB.Models
     partial void InsertChiTietHoaDon(ChiTietHoaDon instance);
     partial void UpdateChiTietHoaDon(ChiTietHoaDon instance);
     partial void DeleteChiTietHoaDon(ChiTietHoaDon instance);
+    partial void InsertCourseCart(CourseCart instance);
+    partial void UpdateCourseCart(CourseCart instance);
+    partial void DeleteCourseCart(CourseCart instance);
     partial void InsertDanhGia(DanhGia instance);
     partial void UpdateDanhGia(DanhGia instance);
     partial void DeleteDanhGia(DanhGia instance);
@@ -121,6 +125,14 @@ namespace DoAnLTWEB.Models
 			}
 		}
 		
+		public System.Data.Linq.Table<CourseCart> CourseCarts
+		{
+			get
+			{
+				return this.GetTable<CourseCart>();
+			}
+		}
+		
 		public System.Data.Linq.Table<DanhGia> DanhGias
 		{
 			get
@@ -180,6 +192,8 @@ namespace DoAnLTWEB.Models
 		
 		private string _Video;
 		
+		private System.Nullable<bool> _TrangThai;
+		
 		private EntityRef<KhoaHoc> _KhoaHoc;
 		
     #region Extensibility Method Definitions
@@ -198,6 +212,8 @@ namespace DoAnLTWEB.Models
     partial void OnThuTuBaiHocChanged();
     partial void OnVideoChanging(string value);
     partial void OnVideoChanged();
+    partial void OnTrangThaiChanging(System.Nullable<bool> value);
+    partial void OnTrangThaiChanged();
     #endregion
 		
 		public BaiGiang()
@@ -227,6 +243,8 @@ namespace DoAnLTWEB.Models
 		}
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TieuDeBG", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+        [Required]
+        [StringLength(255, ErrorMessage = "Tiêu đề phải có ít nhất 8 ký tự.", MinimumLength = 8)]
 		public string TieuDeBG
 		{
 			get
@@ -247,6 +265,7 @@ namespace DoAnLTWEB.Models
 		}
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NoiDungBG", DbType="NVarChar(255)")]
+        [Required]  
 		public string NoiDungBG
 		{
 			get
@@ -291,6 +310,8 @@ namespace DoAnLTWEB.Models
 		}
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ThuTuBaiHoc", DbType="Int")]
+        [Required]
+        [RegularExpression(@"^[0-9]+$", ErrorMessage = "Vui lòng chỉ nhập số")]
 		public System.Nullable<int> ThuTuBaiHoc
 		{
 			get
@@ -311,6 +332,7 @@ namespace DoAnLTWEB.Models
 		}
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Video", DbType="VarChar(500)")]
+        [Required]
 		public string Video
 		{
 			get
@@ -326,6 +348,26 @@ namespace DoAnLTWEB.Models
 					this._Video = value;
 					this.SendPropertyChanged("Video");
 					this.OnVideoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TrangThai", DbType="Bit")]
+		public System.Nullable<bool> TrangThai
+		{
+			get
+			{
+				return this._TrangThai;
+			}
+			set
+			{
+				if ((this._TrangThai != value))
+				{
+					this.OnTrangThaiChanging(value);
+					this.SendPropertyChanging();
+					this._TrangThai = value;
+					this.SendPropertyChanged("TrangThai");
+					this.OnTrangThaiChanged();
 				}
 			}
 		}
@@ -1068,6 +1110,406 @@ namespace DoAnLTWEB.Models
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.CourseCart")]
+	public partial class CourseCart : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _MaKH;
+		
+		private string _MaND;
+		
+		private string _TenKH;
+		
+		private string _MoTaKH;
+		
+		private string _GiangVien;
+		
+		private System.Nullable<System.DateTime> _NgayBD;
+		
+		private System.Nullable<System.DateTime> _NgayKT;
+		
+		private System.Nullable<decimal> _GiaKhoaHoc;
+		
+		private string _TenMonHoc;
+		
+		private string _Picture;
+		
+		private System.Nullable<int> _SoLuong;
+		
+		private EntityRef<KhoaHoc> _KhoaHoc;
+		
+		private EntityRef<NguoiDung> _NguoiDung;
+
+		QuanLyKhoaHocDataContext db = new QuanLyKhoaHocDataContext();
+        public CourseCart(string maKH, string maND)
+        {
+            MaKH = maKH;
+			MaND = maND;
+            KhoaHoc kh = db.KhoaHocs.Single(s => s.MaKH == MaKH);
+            TenKH = kh.TenKH;
+            MoTaKH = kh.MoTaKH;
+            GiangVien = kh.GiangVien;
+            NgayBD = DateTime.Today;
+            NgayKT = DateTime.Today.AddMonths(6);
+            GiaKhoaHoc = decimal.Parse(kh.GiaKhoaHoc.ToString());
+            TenMonHoc = kh.TenMonHoc;
+            Picture = kh.Picture;
+            SoLuong = 1;
+        }
+        #region Extensibility Method Definitions
+        partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnMaKHChanging(string value);
+    partial void OnMaKHChanged();
+    partial void OnMaNDChanging(string value);
+    partial void OnMaNDChanged();
+    partial void OnTenKHChanging(string value);
+    partial void OnTenKHChanged();
+    partial void OnMoTaKHChanging(string value);
+    partial void OnMoTaKHChanged();
+    partial void OnGiangVienChanging(string value);
+    partial void OnGiangVienChanged();
+    partial void OnNgayBDChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayBDChanged();
+    partial void OnNgayKTChanging(System.Nullable<System.DateTime> value);
+    partial void OnNgayKTChanged();
+    partial void OnGiaKhoaHocChanging(System.Nullable<decimal> value);
+    partial void OnGiaKhoaHocChanged();
+    partial void OnTenMonHocChanging(string value);
+    partial void OnTenMonHocChanged();
+    partial void OnPictureChanging(string value);
+    partial void OnPictureChanged();
+    partial void OnSoLuongChanging(System.Nullable<int> value);
+    partial void OnSoLuongChanged();
+    #endregion
+		
+		public CourseCart()
+		{
+			this._KhoaHoc = default(EntityRef<KhoaHoc>);
+			this._NguoiDung = default(EntityRef<NguoiDung>);
+			OnCreated();
+		}        
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKH", DbType="VarChar(11) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string MaKH
+		{
+			get
+			{
+				return this._MaKH;
+			}
+			set
+			{
+				if ((this._MaKH != value))
+				{
+					if (this._KhoaHoc.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnMaKHChanging(value);
+					this.SendPropertyChanging();
+					this._MaKH = value;
+					this.SendPropertyChanged("MaKH");
+					this.OnMaKHChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaND", DbType="VarChar(11) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string MaND
+		{
+			get
+			{
+				return this._MaND;
+			}
+			set
+			{
+				if ((this._MaND != value))
+				{
+					if (this._NguoiDung.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.OnMaNDChanging(value);
+					this.SendPropertyChanging();
+					this._MaND = value;
+					this.SendPropertyChanged("MaND");
+					this.OnMaNDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenKH", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+		public string TenKH
+		{
+			get
+			{
+				return this._TenKH;
+			}
+			set
+			{
+				if ((this._TenKH != value))
+				{
+					this.OnTenKHChanging(value);
+					this.SendPropertyChanging();
+					this._TenKH = value;
+					this.SendPropertyChanged("TenKH");
+					this.OnTenKHChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MoTaKH", DbType="NVarChar(255)")]
+		public string MoTaKH
+		{
+			get
+			{
+				return this._MoTaKH;
+			}
+			set
+			{
+				if ((this._MoTaKH != value))
+				{
+					this.OnMoTaKHChanging(value);
+					this.SendPropertyChanging();
+					this._MoTaKH = value;
+					this.SendPropertyChanged("MoTaKH");
+					this.OnMoTaKHChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GiangVien", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string GiangVien
+		{
+			get
+			{
+				return this._GiangVien;
+			}
+			set
+			{
+				if ((this._GiangVien != value))
+				{
+					this.OnGiangVienChanging(value);
+					this.SendPropertyChanging();
+					this._GiangVien = value;
+					this.SendPropertyChanged("GiangVien");
+					this.OnGiangVienChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayBD", DbType="Date")]
+		public System.Nullable<System.DateTime> NgayBD
+		{
+			get
+			{
+				return this._NgayBD;
+			}
+			set
+			{
+				if ((this._NgayBD != value))
+				{
+					this.OnNgayBDChanging(value);
+					this.SendPropertyChanging();
+					this._NgayBD = value;
+					this.SendPropertyChanged("NgayBD");
+					this.OnNgayBDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayKT", DbType="Date")]
+		public System.Nullable<System.DateTime> NgayKT
+		{
+			get
+			{
+				return this._NgayKT;
+			}
+			set
+			{
+				if ((this._NgayKT != value))
+				{
+					this.OnNgayKTChanging(value);
+					this.SendPropertyChanging();
+					this._NgayKT = value;
+					this.SendPropertyChanged("NgayKT");
+					this.OnNgayKTChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GiaKhoaHoc", DbType="Money")]
+		public System.Nullable<decimal> GiaKhoaHoc
+		{
+			get
+			{
+				return this._GiaKhoaHoc;
+			}
+			set
+			{
+				if ((this._GiaKhoaHoc != value))
+				{
+					this.OnGiaKhoaHocChanging(value);
+					this.SendPropertyChanging();
+					this._GiaKhoaHoc = value;
+					this.SendPropertyChanged("GiaKhoaHoc");
+					this.OnGiaKhoaHocChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenMonHoc", DbType="NVarChar(255)")]
+		public string TenMonHoc
+		{
+			get
+			{
+				return this._TenMonHoc;
+			}
+			set
+			{
+				if ((this._TenMonHoc != value))
+				{
+					this.OnTenMonHocChanging(value);
+					this.SendPropertyChanging();
+					this._TenMonHoc = value;
+					this.SendPropertyChanged("TenMonHoc");
+					this.OnTenMonHocChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="VarChar(50)")]
+		public string Picture
+		{
+			get
+			{
+				return this._Picture;
+			}
+			set
+			{
+				if ((this._Picture != value))
+				{
+					this.OnPictureChanging(value);
+					this.SendPropertyChanging();
+					this._Picture = value;
+					this.SendPropertyChanged("Picture");
+					this.OnPictureChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SoLuong", DbType="Int")]
+		public System.Nullable<int> SoLuong
+		{
+			get
+			{
+				return this._SoLuong;
+			}
+			set
+			{
+				if ((this._SoLuong != value))
+				{
+					this.OnSoLuongChanging(value);
+					this.SendPropertyChanging();
+					this._SoLuong = value;
+					this.SendPropertyChanged("SoLuong");
+					this.OnSoLuongChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KhoaHoc_CourseCart", Storage="_KhoaHoc", ThisKey="MaKH", OtherKey="MaKH", IsForeignKey=true)]
+		public KhoaHoc KhoaHoc
+		{
+			get
+			{
+				return this._KhoaHoc.Entity;
+			}
+			set
+			{
+				KhoaHoc previousValue = this._KhoaHoc.Entity;
+				if (((previousValue != value) 
+							|| (this._KhoaHoc.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._KhoaHoc.Entity = null;
+						previousValue.CourseCarts.Remove(this);
+					}
+					this._KhoaHoc.Entity = value;
+					if ((value != null))
+					{
+						value.CourseCarts.Add(this);
+						this._MaKH = value.MaKH;
+					}
+					else
+					{
+						this._MaKH = default(string);
+					}
+					this.SendPropertyChanged("KhoaHoc");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="NguoiDung_CourseCart", Storage="_NguoiDung", ThisKey="MaND", OtherKey="MaND", IsForeignKey=true)]
+		public NguoiDung NguoiDung
+		{
+			get
+			{
+				return this._NguoiDung.Entity;
+			}
+			set
+			{
+				NguoiDung previousValue = this._NguoiDung.Entity;
+				if (((previousValue != value) 
+							|| (this._NguoiDung.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._NguoiDung.Entity = null;
+						previousValue.CourseCarts.Remove(this);
+					}
+					this._NguoiDung.Entity = value;
+					if ((value != null))
+					{
+						value.CourseCarts.Add(this);
+						this._MaND = value.MaND;
+					}
+					else
+					{
+						this._MaND = default(string);
+					}
+					this.SendPropertyChanged("NguoiDung");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.DanhGia")]
 	public partial class DanhGia : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -1785,9 +2227,11 @@ namespace DoAnLTWEB.Models
 		
 		private EntitySet<ChiTietHoaDon> _ChiTietHoaDons;
 		
+		private EntitySet<CourseCart> _CourseCarts;
+		
 		private EntitySet<DanhGia> _DanhGias;
-
         public bool IsSelected { get; set; }
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -1820,6 +2264,7 @@ namespace DoAnLTWEB.Models
 			this._rateKhoaHocs = new EntitySet<rateKhoaHoc>(new Action<rateKhoaHoc>(this.attach_rateKhoaHocs), new Action<rateKhoaHoc>(this.detach_rateKhoaHocs));
 			this._BaiTaps = new EntitySet<BaiTap>(new Action<BaiTap>(this.attach_BaiTaps), new Action<BaiTap>(this.detach_BaiTaps));
 			this._ChiTietHoaDons = new EntitySet<ChiTietHoaDon>(new Action<ChiTietHoaDon>(this.attach_ChiTietHoaDons), new Action<ChiTietHoaDon>(this.detach_ChiTietHoaDons));
+			this._CourseCarts = new EntitySet<CourseCart>(new Action<CourseCart>(this.attach_CourseCarts), new Action<CourseCart>(this.detach_CourseCarts));
 			this._DanhGias = new EntitySet<DanhGia>(new Action<DanhGia>(this.attach_DanhGias), new Action<DanhGia>(this.detach_DanhGias));
 			OnCreated();
 		}
@@ -1847,7 +2292,7 @@ namespace DoAnLTWEB.Models
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenKH", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
         [Required]
         [StringLength(100, ErrorMessage = "Tên khóa học phải có ít nhất 8 ký tự.", MinimumLength = 8)]
-        public string TenKH
+		public string TenKH
 		{
 			get
 			{
@@ -1869,7 +2314,7 @@ namespace DoAnLTWEB.Models
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MoTaKH", DbType="NVarChar(255)")]
         [Required]
         [StringLength(100, ErrorMessage = "Mô tả khóa học phải có ít nhất 8 ký tự.", MinimumLength = 8)]
-        public string MoTaKH
+		public string MoTaKH
 		{
 			get
 			{
@@ -1889,8 +2334,8 @@ namespace DoAnLTWEB.Models
 		}
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GiangVien", DbType="NVarChar(50) NOT NULL", CanBeNull=false)]
-        [Required]		
-        public string GiangVien
+        [Required]
+		public string GiangVien
 		{
 			get
 			{
@@ -1909,7 +2354,7 @@ namespace DoAnLTWEB.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayBD", DbType="Date")]		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayBD", DbType="Date")]
 		public System.Nullable<System.DateTime> NgayBD
 		{
 			get
@@ -1929,7 +2374,7 @@ namespace DoAnLTWEB.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayKT", DbType="Date")]		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayKT", DbType="Date")]
 		public System.Nullable<System.DateTime> NgayKT
 		{
 			get
@@ -1950,9 +2395,9 @@ namespace DoAnLTWEB.Models
 		}
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GiaKhoaHoc", DbType="Money")]
-		[Required]
-		[RegularExpression(@"^[0-9]+$", ErrorMessage = "Vui lòng chỉ nhập số")]
-        public System.Nullable<decimal> GiaKhoaHoc
+        [Required]
+        [RegularExpression(@"^[0-9]+$", ErrorMessage = "Vui lòng chỉ nhập số")]
+		public System.Nullable<decimal> GiaKhoaHoc
 		{
 			get
 			{
@@ -1973,8 +2418,7 @@ namespace DoAnLTWEB.Models
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenMonHoc", DbType="NVarChar(50)")]
         [Required]
-
-        public string TenMonHoc
+		public string TenMonHoc
 		{
 			get
 			{
@@ -1995,7 +2439,7 @@ namespace DoAnLTWEB.Models
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="VarChar(50)")]
         [Required]
-        public string Picture
+		public string Picture
 		{
 			get
 			{
@@ -2086,6 +2530,19 @@ namespace DoAnLTWEB.Models
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KhoaHoc_CourseCart", Storage="_CourseCarts", ThisKey="MaKH", OtherKey="MaKH")]
+		public EntitySet<CourseCart> CourseCarts
+		{
+			get
+			{
+				return this._CourseCarts;
+			}
+			set
+			{
+				this._CourseCarts.Assign(value);
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="KhoaHoc_DanhGia", Storage="_DanhGias", ThisKey="MaKH", OtherKey="MaKH")]
 		public EntitySet<DanhGia> DanhGias
 		{
@@ -2167,6 +2624,18 @@ namespace DoAnLTWEB.Models
 			entity.KhoaHoc = null;
 		}
 		
+		private void attach_CourseCarts(CourseCart entity)
+		{
+			this.SendPropertyChanging();
+			entity.KhoaHoc = this;
+		}
+		
+		private void detach_CourseCarts(CourseCart entity)
+		{
+			this.SendPropertyChanging();
+			entity.KhoaHoc = null;
+		}
+		
 		private void attach_DanhGias(DanhGia entity)
 		{
 			this.SendPropertyChanging();
@@ -2202,6 +2671,8 @@ namespace DoAnLTWEB.Models
 		
 		private EntitySet<rateKhoaHoc> _rateKhoaHocs;
 		
+		private EntitySet<CourseCart> _CourseCarts;
+		
 		private EntitySet<DanhGia> _DanhGias;
 		
 		private EntitySet<HoaDonDky> _HoaDonDkies;
@@ -2231,6 +2702,7 @@ namespace DoAnLTWEB.Models
 		public NguoiDung()
 		{
 			this._rateKhoaHocs = new EntitySet<rateKhoaHoc>(new Action<rateKhoaHoc>(this.attach_rateKhoaHocs), new Action<rateKhoaHoc>(this.detach_rateKhoaHocs));
+			this._CourseCarts = new EntitySet<CourseCart>(new Action<CourseCart>(this.attach_CourseCarts), new Action<CourseCart>(this.detach_CourseCarts));
 			this._DanhGias = new EntitySet<DanhGia>(new Action<DanhGia>(this.attach_DanhGias), new Action<DanhGia>(this.detach_DanhGias));
 			this._HoaDonDkies = new EntitySet<HoaDonDky>(new Action<HoaDonDky>(this.attach_HoaDonDkies), new Action<HoaDonDky>(this.detach_HoaDonDkies));
 			this._KetQuas = new EntitySet<KetQua>(new Action<KetQua>(this.attach_KetQuas), new Action<KetQua>(this.detach_KetQuas));
@@ -2304,6 +2776,7 @@ namespace DoAnLTWEB.Models
 		}
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HoTen", DbType="NVarChar(100)")]
+        [Required]
 		public string HoTen
 		{
 			get
@@ -2324,7 +2797,6 @@ namespace DoAnLTWEB.Models
 		}
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Email", DbType="VarChar(255) NOT NULL", CanBeNull=false)]
-
         [Required]
         [RegularExpression(@"^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$", ErrorMessage = "Email không hợp lệ.")]
 		public string Email
@@ -2401,6 +2873,19 @@ namespace DoAnLTWEB.Models
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="NguoiDung_CourseCart", Storage="_CourseCarts", ThisKey="MaND", OtherKey="MaND")]
+		public EntitySet<CourseCart> CourseCarts
+		{
+			get
+			{
+				return this._CourseCarts;
+			}
+			set
+			{
+				this._CourseCarts.Assign(value);
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="NguoiDung_DanhGia", Storage="_DanhGias", ThisKey="MaND", OtherKey="MaND")]
 		public EntitySet<DanhGia> DanhGias
 		{
@@ -2467,6 +2952,18 @@ namespace DoAnLTWEB.Models
 		}
 		
 		private void detach_rateKhoaHocs(rateKhoaHoc entity)
+		{
+			this.SendPropertyChanging();
+			entity.NguoiDung = null;
+		}
+		
+		private void attach_CourseCarts(CourseCart entity)
+		{
+			this.SendPropertyChanging();
+			entity.NguoiDung = this;
+		}
+		
+		private void detach_CourseCarts(CourseCart entity)
 		{
 			this.SendPropertyChanging();
 			entity.NguoiDung = null;

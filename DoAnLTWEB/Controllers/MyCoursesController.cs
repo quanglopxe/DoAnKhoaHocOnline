@@ -16,24 +16,26 @@ namespace DoAnLTWEB.Controllers
             db = _db;
         }
 
-        public List<MyCourses> GetMyCourses()
+        public List<CourseCart> GetMyCourses()
         {
-            List<MyCourses> listMyCourses = Session["MyCourses"] as List<MyCourses>;
+            var nd = (NguoiDung)Session["User"];
+            var listMyCourses = db.CourseCarts.Where(l => l.MaND == nd.MaND).ToList();
             if (listMyCourses == null)
             {
-                listMyCourses = new List<MyCourses>();
-                Session["MyCourses"] = listMyCourses;
+                listMyCourses = new List<CourseCart>();                
             }
+            Session["MyCourses"] = listMyCourses;
             return listMyCourses;
         }
 
         private int TongSoLuong()
         {
             int tsl = 0;
-            List<MyCourses> listMyCourses = Session["MyCourses"] as List<MyCourses>;
+            var nd = (NguoiDung)Session["User"];            
+            var listMyCourses = db.CourseCarts.Where(l => l.MaND == nd.MaND).ToList();
             if (listMyCourses != null)
             {
-                tsl = listMyCourses.Sum(sl => sl.iSoLuong);
+                tsl = listMyCourses.Count();
             }
             return tsl;
         }
@@ -41,10 +43,11 @@ namespace DoAnLTWEB.Controllers
         private decimal TongThanhTien()
         {
             decimal ttt = 0;
-            List<MyCourses> listMyCourses = Session["MyCourses"] as List<MyCourses>;
+            var nd = (NguoiDung)Session["User"];
+            var listMyCourses = db.CourseCarts.Where(l => l.MaND == nd.MaND).ToList();
             if (listMyCourses != null)
             {
-                ttt += listMyCourses.Sum(c => c.dDonGia);
+                ttt += (decimal)listMyCourses.Sum(c => c.GiaKhoaHoc);
             }
             return ttt;
         }
@@ -53,7 +56,7 @@ namespace DoAnLTWEB.Controllers
         // GET: /MyCourses/
         public ActionResult MyCourses()
         {            
-            List<MyCourses> listMyCourses = GetMyCourses();
+            List<CourseCart> listMyCourses = GetMyCourses();
             ViewBag.TongThanhTien = TongThanhTien();
             return View(listMyCourses);
         }
@@ -67,12 +70,16 @@ namespace DoAnLTWEB.Controllers
 
         public ActionResult ThemMyCourses(string cID, string strURL)
         {
-            List<MyCourses> listMyCourses = GetMyCourses();
-            MyCourses khoahoc = listMyCourses.Find(c => c.sMaKH == cID);
+            var nd = (NguoiDung)Session["User"];
+            var maND = nd.MaND;
+            List<CourseCart> listMyCourses = GetMyCourses();
+            CourseCart khoahoc = listMyCourses.Find(c => c.MaKH == cID && c.MaND == maND);
             if (khoahoc == null)
             {
-                khoahoc = new MyCourses(cID);
+                khoahoc = new CourseCart(cID, maND);
                 listMyCourses.Add(khoahoc);
+                db.CourseCarts.InsertOnSubmit(khoahoc);
+                db.SubmitChanges();
                 return Redirect(strURL);
             }
             else
@@ -83,34 +90,39 @@ namespace DoAnLTWEB.Controllers
 
         public ActionResult XoaMyCourses(string MaKH)
         {
-            List<MyCourses> listMyCourses = GetMyCourses();
-            MyCourses kh = listMyCourses.Single(s => s.sMaKH == MaKH);
+            var nd = (NguoiDung)Session["User"];
+            var maND = nd.MaND;
+            List<CourseCart> listMyCourses = GetMyCourses();
+            CourseCart kh = listMyCourses.Single(s => s.MaKH == MaKH && s.MaND == maND);
             if (kh != null)
             {
-                listMyCourses.RemoveAll(s => s.sMaKH == MaKH);
+                listMyCourses.RemoveAll(s => s.MaKH == MaKH && s.MaND == maND);
+                db.CourseCarts.DeleteOnSubmit(kh);
+                db.SubmitChanges();
                 return RedirectToAction("MyCourses", "MyCourses");
-            }
-
-            if (listMyCourses.Count == 0)
-            {
-                return RedirectToAction("Index", "Home");
-            }
+            }            
             return RedirectToAction("MyCourses", "MyCourses");
         }
 
         public ActionResult XoaMyCoursesAll()
         {
-            List<MyCourses> listMyCourses = GetMyCourses();
-            listMyCourses.Clear();
-            return RedirectToAction("Index", "Home");
+            var nd = (NguoiDung)Session["User"];
+            List<CourseCart> listMyCourses = GetMyCourses();            
+            foreach(var courseCart in listMyCourses)
+            {
+                db.CourseCarts.DeleteOnSubmit(courseCart);
+            }
+            db.SubmitChanges();
+            listMyCourses.Clear();            
+            return RedirectToAction("Course", "Course");
         }
 
-        public ActionResult CapNhatMyCourses(string MaKH, FormCollection f)
-        {
-            List<MyCourses> listMyCourses = GetMyCourses();
-            MyCourses kh = listMyCourses.Single(s => s.sMaKH == MaKH);
-            return RedirectToAction("MyCourses", "MyCourses");
-        }
+        //public ActionResult CapNhatMyCourses(string MaKH, FormCollection f)
+        //{
+        //    List<CourseCart> listMyCourses = GetMyCourses();
+        //    CourseCart kh = listMyCourses.Single(s => s.MaKH == MaKH);
+        //    return RedirectToAction("MyCourses", "MyCourses");
+        //}
 
         
 	}

@@ -8,6 +8,7 @@
       <Column Name="MaKH" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
       <Column Name="ThuTuBaiHoc" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="Video" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="TrangThai" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Association Name="KhoaHoc_BaiGiang" Member="KhoaHoc" ThisKey="MaKH" OtherKey="MaKH" Type="KhoaHoc" IsForeignKey="true" />
     </Type>
   </Table>
@@ -41,6 +42,23 @@
       <Column Name="PhuongThuc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Association Name="HoaDonDky_ChiTietHoaDon" Member="HoaDonDky" ThisKey="MaHD" OtherKey="MaHD" Type="HoaDonDky" IsForeignKey="true" />
       <Association Name="KhoaHoc_ChiTietHoaDon" Member="KhoaHoc" ThisKey="MaKH" OtherKey="MaKH" Type="KhoaHoc" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CourseCart" Member="CourseCarts">
+    <Type Name="CourseCart">
+      <Column Name="MaKH" Type="System.String" DbType="VarChar(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MaND" Type="System.String" DbType="VarChar(11) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenKH" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="MoTaKH" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="GiangVien" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="NgayBD" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="NgayKT" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="GiaKhoaHoc" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="TenMonHoc" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Picture" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="KhoaHoc_CourseCart" Member="KhoaHoc" ThisKey="MaKH" OtherKey="MaKH" Type="KhoaHoc" IsForeignKey="true" />
+      <Association Name="NguoiDung_CourseCart" Member="NguoiDung" ThisKey="MaND" OtherKey="MaND" Type="NguoiDung" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.DanhGia" Member="DanhGias">
@@ -91,6 +109,7 @@
       <Association Name="KhoaHoc_rateKhoaHoc" Member="rateKhoaHocs" ThisKey="MaKH" OtherKey="MaKH" Type="rateKhoaHoc" />
       <Association Name="KhoaHoc_BaiTap" Member="BaiTaps" ThisKey="MaKH" OtherKey="MaKH" Type="BaiTap" />
       <Association Name="KhoaHoc_ChiTietHoaDon" Member="ChiTietHoaDons" ThisKey="MaKH" OtherKey="MaKH" Type="ChiTietHoaDon" />
+      <Association Name="KhoaHoc_CourseCart" Member="CourseCarts" ThisKey="MaKH" OtherKey="MaKH" Type="CourseCart" />
       <Association Name="KhoaHoc_DanhGia" Member="DanhGias" ThisKey="MaKH" OtherKey="MaKH" Type="DanhGia" />
     </Type>
   </Table>
@@ -104,6 +123,7 @@
       <Column Name="DienThoai" Type="System.String" DbType="VarChar(11)" CanBeNull="true" />
       <Column Name="Roles" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Association Name="NguoiDung_rateKhoaHoc" Member="rateKhoaHocs" ThisKey="MaND" OtherKey="MaND" Type="rateKhoaHoc" />
+      <Association Name="NguoiDung_CourseCart" Member="CourseCarts" ThisKey="MaND" OtherKey="MaND" Type="CourseCart" />
       <Association Name="NguoiDung_DanhGia" Member="DanhGias" ThisKey="MaND" OtherKey="MaND" Type="DanhGia" />
       <Association Name="NguoiDung_HoaDonDky" Member="HoaDonDkies" ThisKey="MaND" OtherKey="MaND" Type="HoaDonDky" />
       <Association Name="NguoiDung_KetQua" Member="KetQuas" ThisKey="MaND" OtherKey="MaND" Type="KetQua" />

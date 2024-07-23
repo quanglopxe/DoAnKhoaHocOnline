@@ -192,7 +192,9 @@ namespace DoAnLTWEB.Controllers
         public ActionResult Logout()
         {
             Session["User"] = null;
-            Session["Role"] = null;
+            Session["Roles"] = null;
+            Session["CourseIds"] = null;
+            Session["MyCourses"] = null;
             return RedirectToAction("Login", "User");
         }
         public ActionResult Error(string error = "")
