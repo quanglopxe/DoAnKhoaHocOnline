@@ -22,6 +22,7 @@ namespace DoAnLTWEB.Models
 	using System;
     using System.ComponentModel.DataAnnotations;
     using System.Web.WebPages;
+    using System.Web;
 
     [global::System.Data.Linq.Mapping.DatabaseAttribute(Name="DB_BANKHOAHOC_ONLINE")]
 	public partial class QuanLyKhoaHocDataContext : System.Data.Linq.DataContext
@@ -195,9 +196,12 @@ namespace DoAnLTWEB.Models
 		private System.Nullable<bool> _TrangThai;
 		
 		private EntityRef<KhoaHoc> _KhoaHoc;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
+
+        public HttpPostedFileBase videoFile { get; set; }
+		public bool IsSelected {  get; set; }
+
+        #region Extensibility Method Definitions
+        partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
     partial void OnMaBGChanging(string value);
@@ -331,8 +335,7 @@ namespace DoAnLTWEB.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Video", DbType="VarChar(500)")]
-        [Required]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Video", DbType="VarChar(500)")]        
 		public string Video
 		{
 			get

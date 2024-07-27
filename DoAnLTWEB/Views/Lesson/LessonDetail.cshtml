@@ -15,7 +15,7 @@
     <link href="~/Content/css/style.css" rel="stylesheet">
     <link href="~/Content/css/styleLesson.css" rel="stylesheet">
 </head>
-<body>
+<body>    
     <section class="course_details_area" style="margin-top: 60px;">
         <div class="container">
             <div class="row">
@@ -24,9 +24,20 @@
                         <h4 class="title_top">@Html.DisplayFor(model => model.TieuDeBG)</h4>
                     </div>
                     <div class="main_image">
-                        <iframe style="width: 100%" height="500" src="@Html.DisplayFor(model => model.Video)"
-                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-                            clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        
+                        @if (ViewBag.VideoType == "https")
+                        {
+                            <iframe style="width: 100%" height="500" src="@ViewBag.Video"
+                                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                            </iframe>
+                        }
+                        else
+                        {
+                            <video width="100%" height="500" controls >
+                                <source src="@Url.Content(Model.Video)" type="video/mp4" />
+                            </video>
+                        }
                     </div>
 
                 </div>

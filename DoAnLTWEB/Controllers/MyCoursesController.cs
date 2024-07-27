@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using DoAnLTWEB.Filter;
 using DoAnLTWEB.Models;
 
 namespace DoAnLTWEB.Controllers
 {
-    
+    [CheckLogin]
     public class MyCoursesController : Controller
     {
         private readonly QuanLyKhoaHocDataContext db;
@@ -31,8 +32,8 @@ namespace DoAnLTWEB.Controllers
         private int TongSoLuong()
         {
             int tsl = 0;
-            var nd = (NguoiDung)Session["User"];            
-            var listMyCourses = db.CourseCarts.Where(l => l.MaND == nd.MaND).ToList();
+            var nd = (NguoiDung)Session["User"];
+            var listMyCourses = GetMyCourses();
             if (listMyCourses != null)
             {
                 tsl = listMyCourses.Count();
@@ -73,7 +74,7 @@ namespace DoAnLTWEB.Controllers
             var nd = (NguoiDung)Session["User"];
             var maND = nd.MaND;
             List<CourseCart> listMyCourses = GetMyCourses();
-            CourseCart khoahoc = listMyCourses.Find(c => c.MaKH == cID && c.MaND == maND);
+            CourseCart khoahoc = listMyCourses.Find(c => c.MaKH == cID && c.MaND == maND);            
             if (khoahoc == null)
             {
                 khoahoc = new CourseCart(cID, maND);
@@ -84,7 +85,7 @@ namespace DoAnLTWEB.Controllers
             }
             else
             {
-                return RedirectToAction("MyCourses");
+                return Redirect(strURL);
             }
         }
 

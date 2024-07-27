@@ -43,25 +43,20 @@ namespace DoAnLTWEB.Controllers
                     else
                     {
                         Session["Roles"] = "User";
-                        var listHD = db.HoaDonDkies.Where(hd => hd.MaND == nd.MaND).ToList();
+                        //khởi tạo session[courseids]
+                        var listHD = db.HoaDonDkies.Where(hd => hd.MaND == nd.MaND && hd.TrangThai == "Đã thanh toán").ToList();
                         var cthd = db.ChiTietHoaDons.Where(c => listHD.Select(hd => hd.MaHD).Contains(c.MaHD)).ToList();
                         List<string> courseIds = new List<string>();
 
-                        foreach (var hd in listHD)
+                        foreach (var registeredCourses in cthd)
                         {
-                            if (hd.TrangThai == "Đã thanh toán")
+                            var courses = db.KhoaHocs.FirstOrDefault(kh => kh.MaKH == registeredCourses.MaKH);
+                            if (courses != null)
                             {
-                                foreach (var registeredCourses in cthd)
-                                {
-                                    var courses = db.KhoaHocs.FirstOrDefault(kh => kh.MaKH == registeredCourses.MaKH);
-                                    if (courses != null)
-                                    {
-                                        courseIds.Add(registeredCourses.MaKH);
-                                    }
-                                }
-                                Session["CourseIds"] = courseIds;
+                                courseIds.Add(registeredCourses.MaKH);
                             }
                         }
+                        Session["CourseIds"] = courseIds;                                                    
                         return RedirectToAction("Index", "Home");
                     }                    
                 }

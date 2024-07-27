@@ -7,7 +7,7 @@
 
 <h2>Thêm mới bài giảng cho khóa học</h2>
 
-@using (Html.BeginForm())
+@using (Html.BeginForm("CreateLesson", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
 
@@ -31,9 +31,9 @@
         </div>
     </div>
 
-    <div class="form-group" style="display:none">
+    <div class="form-group">
         <label>Mã khóa học</label>
-        <div class="col-md-10">
+        <div class="col-md-10" style="display: none">
             @Html.EditorFor(model => model.MaKH, new { htmlAttributes = new { @class = "form-control" } })
             @Html.ValidationMessageFor(model => model.MaKH, "", new { @class = "text-danger" })
         </div>
@@ -66,23 +66,21 @@
     <div id="videoFileForm" class="form-group">
         <label>Tải video lên</label>
         <div class="col-md-10">
-            <input type="file" name="videoFile" class="form-control" />
-            @Html.ValidationMessageFor(model => model.Video, "", new { @class = "text-danger" })
+            @Html.TextBoxFor(model => model.videoFile, new { type = "file" })
         </div>
     </div>
 
     <div id="youtubeForm" class="form-group" style="display: none;">
         <label>Link video YouTube (free)</label>
         <div class="col-md-10">
-            <input type="text" name="youtubeLink" class="form-control" />
-            @Html.ValidationMessageFor(model => model.Video, "", new { @class = "text-danger" })
+            <input type="text" name="youtubeLink" class="form-control" />            
         </div>
     </div>
-
+    <p class="text-danger">@ViewBag.ErrorMessage</p>
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
             <button type="submit" class="btn btn-success">Thêm mới</button>
-            <a href="@Url.Action("AdminLesson")" class="btn btn-primary">Quay lại</a>
+            <a href="@Url.Action("Lesson","Lesson", new {@MaKH = Model.MaKH})" class="btn btn-primary">Quay lại</a>
         </div>
     </div>
 </div>

@@ -18,7 +18,7 @@
 
         <div class="row">
             <div class="col-6">
-                <div class="form-group">
+                <div class="form-group" style="display:none">
                     @Html.LabelFor(model => model.MaKH, htmlAttributes: new { @class = "control-label col-md-2" })
                     <div class="col-md-10">
                         @Html.TextBoxFor(model => model.MaKH, new { @class = "form-control", @readonly = "readonly" })
@@ -89,8 +89,3 @@
 }
 
 
-<style>
-    .makh{
-        display: none;
-    }
-</style>

@@ -155,6 +155,7 @@
     <Content Include="Content\Images\roadmap_fe.png" />
     <Content Include="Content\Images\TKW.png" />
     <Content Include="Content\PagedList.css" />
+    <Content Include="Content\Video\test.mp4" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -258,8 +259,9 @@
     <Content Include="Views\Course\CourseWithSearchString.cshtml" />
     <Content Include="Views\Course\RegisterdCourses.cshtml" />
     <Content Include="Views\Course\RegisterdCoursesPartial.cshtml" />
-    <Content Include="Views\Admin\AdminLesson.cshtml" />
     <Content Include="Views\Admin\CreateLesson.cshtml" />
+    <Content Include="Views\Admin\EditLesson.cshtml" />
+    <Content Include="Views\Admin\RecoverLesson.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -269,7 +271,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\LessonVideo\" />
     <Folder Include="Views\Payment\" />
   </ItemGroup>
   <ItemGroup>

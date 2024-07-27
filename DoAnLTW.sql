@@ -322,7 +322,7 @@ select * from KhoaHoc
 select * from nguoidung
 select * from HoaDonDky
 select * from ChiTietHoaDon
-select * from BaiGiang
+select * from BaiGiang 
 select * from CourseCart
 
 --store procedure

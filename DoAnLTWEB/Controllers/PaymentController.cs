@@ -58,7 +58,7 @@ namespace DoAnLTWEB.Controllers
                 hoadondky.TrangThai = "Đã thanh toán";
                 db.SubmitChanges();
                 Session["SuccessMessage"] = "Thanh toán thành công!";
-
+                
                 //Lưu các khóa học đã đăng ký
                 var nd = (NguoiDung)Session["User"];
                 var listHD = db.HoaDonDkies.Where(hd => hd.MaND == nd.MaND).ToList();
@@ -89,7 +89,8 @@ namespace DoAnLTWEB.Controllers
                     kh.NgayKT = DateTime.Now.AddMonths(6);                                        
                 }
                 db.SubmitChanges();
-                return RedirectToAction("Course","Course");
+                //Cập nhật lại giỏ hàng
+                return RedirectToAction("XoaMyCoursesAll", "MyCourses");
             }
             else
             {
@@ -119,7 +120,7 @@ namespace DoAnLTWEB.Controllers
         public ActionResult ThanhToan()
         {            
             var User = Session["User"] as NguoiDung;
-            var listKH = Session["MyCourses"] as List<MyCourses>;            
+            var listKH = Session["MyCourses"] as List<CourseCart>;            
             var KhachHang = db.NguoiDungs.Where(kh => kh.TenND == User.TenND).FirstOrDefault();                                 
 
             try
@@ -135,13 +136,12 @@ namespace DoAnLTWEB.Controllers
                 {
                     ChiTietHoaDon cttt = new ChiTietHoaDon();
                     cttt.MaHD = dk1.MaHD;
-                    cttt.MaKH = item.sMaKH;
-                    cttt.SoTien = item.dDonGia;
+                    cttt.MaKH = item.MaKH;
+                    cttt.SoTien = item.GiaKhoaHoc;
                     cttt.PhuongThuc = "Chuyển khoản";
                     db.ChiTietHoaDons.InsertOnSubmit(cttt);                    
                 }
-                db.SubmitChanges();
-                Session["MyCourses"] = null;
+                db.SubmitChanges();                
                 return RedirectToAction("VnPayPayment");
             }
             catch (Exception ex)

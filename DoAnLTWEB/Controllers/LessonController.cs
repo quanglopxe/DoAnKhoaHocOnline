@@ -26,12 +26,10 @@ namespace DoAnLTWEB.Controllers
             {
                 int pageSize = 10;
                 int pageNumber = (page ?? 1);
-                var listBaiGiang = db.BaiGiangs.Where(c => c.MaKH == maKH).ToPagedList(pageNumber,pageSize);
+                var listBaiGiang = db.BaiGiangs.Where(c => c.MaKH == maKH && c.TrangThai == true).ToPagedList(pageNumber,pageSize);                
                 ViewData["IsRegisterCourse"] = false;
                 if (listBaiGiang.Count > 0)
-                {
-                    ViewData["KhoaHoc"] = listBaiGiang.First().KhoaHoc;
-                    ViewBag.MaKH = maKH;
+                {                                        
                     NguoiDung nguoiDung = (NguoiDung)Session["User"];
                     KhoaHoc course = db.KhoaHocs.FirstOrDefault(c => c.MaKH == maKH);
                     var listMaKH = Session["CourseIds"] as List<string>;                    
@@ -67,7 +65,12 @@ namespace DoAnLTWEB.Controllers
             try
             {
                 var baiGiang = db.BaiGiangs.FirstOrDefault(m => m.MaBG == maBG);
-                baiGiang.Video = GetEmbedYouTubeLink(baiGiang.Video);
+                var videoType = baiGiang.Video.Substring(0, 5);
+                ViewBag.VideoType = videoType;                
+                if(videoType == "https")
+                {
+                    ViewBag.Video = GetEmbedYouTubeLink(baiGiang.Video);
+                }                
                 if (baiGiang == null)
                 {
                     return RedirectToAction("Error", "User", new { error = "Không tìm thấy bài giảng " + maBG });

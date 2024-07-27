@@ -39,11 +39,12 @@
                     @Html.DisplayFor(modelItem => item.TenKH)
                 </td>
                 <td>
-                    <button type="button" class="btn btn-primary edit"><a href="@Url.Action("EditCourse", new { MaKH = item.MaKH })" style="color: white; text-decoration: none;">Sửa</a></button> |
+                    <a href="@Url.Action("EditCourse", new { MaKH = item.MaKH })" class="btn btn-primary">Sửa</a>
                     <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal-@item.MaKH" data-makh="@item.MaKH" data-tenkh="@item.TenKH">
                         Xóa
-                    </button>
-
+                    </button>                    
+                    <a href="@Url.Action("Lesson", "Lesson", new { MaKH = item.MaKH})" class="btn btn-primary">Chi tiết bài giảng</a>
+                    
                     <!-- Modal -->
                     <div class="modal fade" id="exampleModal-@item.MaKH" tabindex="-1" aria-labelledby="exampleModalLabel-@item.MaKH" aria-hidden="true">
                         <div class="modal-dialog">
