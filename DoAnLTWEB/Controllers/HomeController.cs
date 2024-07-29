@@ -10,15 +10,7 @@ namespace DoAnLTWEB.Controllers
     {
         //
         // GET: /Home/
-        public ActionResult Index()
-        {
-            return View();
-        }
-        public ActionResult Index1()
-        {
-            return View();
-        }
-        public ActionResult Error()
+        public ActionResult Info()
         {
             return View();
         }

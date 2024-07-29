@@ -1,0 +1,71 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+@model DoAnLTWEB.Models.NguoiDung
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Đăng ký</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/style.css" rel="stylesheet">
+    <link href="~/Content/css/styleLesson.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container py-3">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="mb-4">
+                        <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Need Any Courses</h5>                        
+                    </div>                    
+                </div>
+                <div class="col-lg-5">
+                    <div class="card border-0">
+                        <div class="card-header bg-light text-center p-4">
+                            <h1 class="m-0">Đăng ký</h1>
+                        </div>
+                        <div class="card-body rounded p-5" style="background-color: lightblue">
+                            <form action="/User/Register" method="post">
+                                <div class="form-group">
+                                    <input name="TenND" value="@ViewBag.TenND" type="text" class="form-control border-0 p-4" placeholder="Tên người dùng" required="required" />
+                                    @Html.ValidationMessageFor(model => model.TenND,"", new { @class = "text-danger"})
+                                </div>
+                                <div class="form-group">
+                                    <input name="MatKhau" value="@ViewBag.MatKhau" type="password" class="form-control border-0 p-4" placeholder="Mật khẩu" required="required" />
+                                    @Html.ValidationMessageFor(model => model.MatKhau, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="form-group">
+                                    <input name="HoTen" value="@ViewBag.HoTen" type="text" class="form-control border-0 p-4" placeholder="Họ và Tên" required="required" />
+                                    @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="form-group">
+                                    <input name="Email" value="@ViewBag.Email" type="text" class="form-control border-0 p-4" placeholder="Email" required="required" />
+                                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="form-group">
+                                    <input name="DienThoai" value="@ViewBag.DienThoai" type="tel" class="form-control border-0 p-4" placeholder="Số điện thoại" required="required" />
+                                    @Html.ValidationMessageFor(model => model.DienThoai, "", new { @class = "text-danger" })
+                                </div>
+                                
+                                <div>
+                                    <button class="btn btn-dark btn-block border-0 py-3" type="submit">Đăng ký</button>
+                                </div>
+                                <div class="pt-2">
+                                    <div style="color: black; width: fit-content; margin-right: auto; margin-left: auto;">
+                                        Đã có tài khoản? <a href="/User/Login" style="color: orangered;"> &nbsp; Đăng nhập</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

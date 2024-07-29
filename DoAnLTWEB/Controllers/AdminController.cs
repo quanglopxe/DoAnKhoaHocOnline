@@ -67,19 +67,24 @@ namespace DoAnLTWEB.Controllers
         [HttpPost]
         public ActionResult CreateCourse(KhoaHoc khoaHoc)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid && khoaHoc.imgFile != null && khoaHoc.imgFile.ContentLength > 0)
             {                
+                string fileName = System.IO.Path.GetFileName(khoaHoc.imgFile.FileName);
+                string filePath = Server.MapPath("~/Content/Images/" + fileName);
+                khoaHoc.imgFile.SaveAs(filePath);
+
+                khoaHoc.Picture = "~/Content/Images/" + fileName;
                 khoaHoc.MaKH = generateMaKH();
                 khoaHoc.NgayBD = DateTime.Today;
                 khoaHoc.NgayKT = DateTime.Today.AddMonths(6);
                 khoaHoc.TrangThai = true;
                 db.KhoaHocs.InsertOnSubmit(khoaHoc);
                 db.SubmitChanges();
-                return RedirectToAction("AdminCourse");
+                return RedirectToAction("AdminCourse");                
             }  
             else
             {
-
+                ModelState.AddModelError("imgFile", "Vui lòng chọn ảnh bìa cho khóa học");
                 return View(khoaHoc);
             }            
         }
@@ -155,12 +160,23 @@ namespace DoAnLTWEB.Controllers
                 
                 if (KH != null)
                 {
+                    if (kh.imgFile != null && kh.imgFile.ContentLength > 0)
+                    {
+                        string fileName = System.IO.Path.GetFileName(kh.imgFile.FileName);
+                        string filePath = Server.MapPath("~/Content/Images/" + fileName);
+                        kh.imgFile.SaveAs(filePath);
+                        KH.Picture = "~/Content/Images/" + fileName;
+                    }
+                    else
+                    {
+                        KH.Picture = kh.Picture;
+                    }
                     KH.TenKH = kh.TenKH;
                     KH.MoTaKH = kh.MoTaKH;
                     KH.GiangVien = kh.GiangVien;                    
                     KH.GiaKhoaHoc = kh.GiaKhoaHoc;
                     KH.TenMonHoc = kh.TenMonHoc;
-                    KH.Picture = kh.Picture;
+                    
                     db.SubmitChanges();
                     return RedirectToAction("AdminCourse");
                 }

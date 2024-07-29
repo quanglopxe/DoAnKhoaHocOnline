@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "Lộ trình học";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Lộ trình học</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/style.css" rel="stylesheet">
+    <link href="~/Content/css/styleLesson.css" rel="stylesheet">
+</head>
+<body style="position:relative; top:50px">
+    <div class="container">
+        <h3 class="text-heading" style="font-weight: bold;">Lộ trình học</h3>
+        <p class="sample-text mb-30">
+            Để bắt đầu một cách thuận lợi, bạn nên tập trung vào một lộ trình học.
+            Ví dụ: Để đi làm với vị trí "Lập trình viên Front-end" bạn nên tập trung vào lộ trình "Front-end".
+            Hàng nghìn người khác đang học lộ trình giống như bạn. Hãy tham gia hỏi đáp, chia sẻ và hỗ trợ nhau trong quá trình học nhé.
+        </p>
+        <div class="row justify-content-around">
+            <div class="col-md-5">
+                <div class="row align-items-center border py-4 px-1" style="border-radius: 20px;">
+                    <div class="col-md-9 mt-sm-20">
+                        <h3 class="mb-2" style="font-weight: bold;">Lộ trình học Front-end</h3>
+                        <p>Lập trình viên Front-end là người xây dựng ra giao diện websites. Trong phần này F8 sẽ chia sẻ cho bạn lộ trình để trở thành lập trình viên Front-end nhé.</p>
+                        <a href="/Roadmap/RoadmapFE" class="btn_1 d-block mt-3" style="width: fit-content;">Xem chi tiết</a>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="~/Content/Images/roadmap_fe.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="row align-items-center border py-4 px-1" style="border-radius: 20px;">
+                    <div class="col-md-9 mt-sm-20">
+                        <h3 class="mb-2" style="font-weight: bold;">Lộ trình học Back-end</h3>
+                        <p>Trái với Front-end thì lập trình viên Back-end là người làm việc với dữ liệu, công việc thường nặng tính logic hơn. Chúng ta sẽ cùng tìm hiểu thêm về lộ trình học Back-end nhé.</p>
+                        <a href="/Roadmap/RoadmapBE" class="btn_1 d-block mt-3" style="width: fit-content;">Xem chi tiết</a>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="~/Content/Images/roadmap_be.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

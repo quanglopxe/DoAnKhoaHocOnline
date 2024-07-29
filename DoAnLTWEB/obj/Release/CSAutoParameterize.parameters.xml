@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DB_BANKHOAHOC_ONLINEConnectionString3-Web.config Connection String" description="DB_BANKHOAHOC_ONLINEConnectionString3 Connection String used in web.config by the application to access the database." defaultValue="Data Source=DESKTOP-S56F490\DUONGTHUANQUANG;Initial Catalog=DB_BANKHOAHOC_ONLINE;User ID=sa;Password=123" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DB_BANKHOAHOC_ONLINEConnectionString3']/@connectionString" />
+  </parameter>
+</parameters>

@@ -190,6 +190,8 @@
       <LastGenOutput>QuanLyKhoaHoc.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
+    <None Include="Properties\PublishProfiles\quang123-001-site1 - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\quang123-001-site1 - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -220,7 +222,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\MyCourses.cs" />
     <Compile Include="Models\QuanLyKhoaHoc.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -253,7 +254,6 @@
     <Content Include="Views\Admin\EditCourse.cshtml" />
     <Content Include="Views\Admin\CreateCourse.cshtml" />
     <Content Include="Views\Lesson\ShowComment.cshtml" />
-    <Content Include="Views\Lesson\CommentOnKhoaHoc.cshtml" />
     <Content Include="Views\Admin\RecoverCourse.cshtml" />
     <Content Include="Views\Home\Error.cshtml" />
     <Content Include="Views\Course\CourseWithSearchString.cshtml" />
@@ -262,6 +262,8 @@
     <Content Include="Views\Admin\CreateLesson.cshtml" />
     <Content Include="Views\Admin\EditLesson.cshtml" />
     <Content Include="Views\Admin\RecoverLesson.cshtml" />
+    <Content Include="Views\Home\Info.cshtml" />
+    <Content Include="Views\MyCourses\ViewSoLuong.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

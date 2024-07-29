@@ -10,7 +10,7 @@ namespace DoAnLTWEB.Controllers
 {
     [CheckLogin]
     public class MyCoursesController : Controller
-    {
+    {        
         private readonly QuanLyKhoaHocDataContext db;
         public MyCoursesController(QuanLyKhoaHocDataContext _db)
         {
@@ -61,6 +61,11 @@ namespace DoAnLTWEB.Controllers
             ViewBag.TongThanhTien = TongThanhTien();
             return View(listMyCourses);
         }
+        public ActionResult ViewSoLuong()
+        {
+            ViewBag.TongSoLuong = TongSoLuong();
+            return View();
+        }
 
         public ActionResult MyCoursesPartial()
         {
@@ -68,24 +73,25 @@ namespace DoAnLTWEB.Controllers
             ViewBag.TongThanhTien = TongThanhTien();
             return View();
         }
-
-        public ActionResult ThemMyCourses(string cID, string strURL)
-        {
+        [HttpPost]
+        public ActionResult ThemMyCourses(string cID/*, string strURL*/)
+        {                        
             var nd = (NguoiDung)Session["User"];
             var maND = nd.MaND;
             List<CourseCart> listMyCourses = GetMyCourses();
-            CourseCart khoahoc = listMyCourses.Find(c => c.MaKH == cID && c.MaND == maND);            
+            CourseCart khoahoc = listMyCourses.Find(c => c.MaKH == cID && c.MaND == maND);
             if (khoahoc == null)
             {
                 khoahoc = new CourseCart(cID, maND);
                 listMyCourses.Add(khoahoc);
                 db.CourseCarts.InsertOnSubmit(khoahoc);
                 db.SubmitChanges();
-                return Redirect(strURL);
+                //return Redirect(strURL);
+                return Json(new { success = true });
             }
             else
             {
-                return Redirect(strURL);
+                return Json(new { success = true });
             }
         }
 

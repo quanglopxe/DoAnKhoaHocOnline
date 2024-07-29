@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI;
 using DoAnLTWEB.Models;
 using PagedList;
 
@@ -33,14 +34,16 @@ namespace DoAnLTWEB.Controllers
             return View(listCourse);
         }
         [HttpPost]
-        public ActionResult Course(string searchStr)
+        public ActionResult Course(string searchStr, int? page)
         {
-            List<KhoaHoc> listCourse = new List<KhoaHoc>();            
+            int pageSize = 9;
+            int pageNumber = (page ?? 1);
             if (searchStr != null)
             {                
-                listCourse = db.KhoaHocs.Where(c => c.TrangThai == true && c.TenMonHoc.Contains(searchStr)).ToList();
-            }            
-            return View(listCourse);
+                var listCourse = db.KhoaHocs.Where(c => c.TrangThai == true && c.TenMonHoc.Contains(searchStr)).ToPagedList(pageNumber, pageSize);
+                return View(listCourse);
+            }
+            return View();
         }
         public ActionResult RegisterdCourses()
         {
@@ -75,7 +78,7 @@ namespace DoAnLTWEB.Controllers
             List<KhoaHoc> listCourse = new List<KhoaHoc>();
             ViewBag.TenMH = null;
             if(TenMH != null)
-            {
+            {                
                 listCourse = db.KhoaHocs.Where(c => c.TrangThai == true && c.TenMonHoc == TenMH).ToList();
                 ViewBag.TenMH = TenMH;
             }

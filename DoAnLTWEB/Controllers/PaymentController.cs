@@ -23,6 +23,7 @@ namespace DoAnLTWEB.Controllers
             var user = (NguoiDung)Session["User"];
             var hoadondky = db.HoaDonDkies.OrderByDescending(hd => hd.MaHD).FirstOrDefault();
             var cthd = db.ChiTietHoaDons.Where(c => c.MaHD == hoadondky.MaHD).ToList();
+            DateTime expireDate = DateTime.Now.AddDays(1);
 
             // Tạo đối tượng VnPayLibrary và cấu hình
             var vnpay = new VnPayLibrary();
@@ -38,6 +39,7 @@ namespace DoAnLTWEB.Controllers
             vnpay.AddRequestData("vnp_OrderType", "other"); // Loại hình thanh toán
             vnpay.AddRequestData("vnp_ReturnUrl", Url.Action("VnPayReturn", "Payment", null, Request.Url.Scheme));
             vnpay.AddRequestData("vnp_TxnRef", DateTime.Now.Ticks.ToString()); // Mã giao dịch
+            vnpay.AddRequestData("vnp_ExpireDate", expireDate.ToString("yyyyMMddHHmmss"));
 
             string paymentUrl = vnpay.CreateRequestUrl("https://sandbox.vnpayment.vn/paymentv2/vpcpay.html", "MMZXWISZNUUUNKGOZQPCPASLLTHYGMTB");
 
@@ -97,7 +99,7 @@ namespace DoAnLTWEB.Controllers
                 hoadondky.TrangThai = "Đã hủy";
                 db.SubmitChanges();
                 ViewBag.Error = "Respond code != 00 => Thanh toán không thành công! Giao dịch đã bị hủy";
-                return RedirectToAction("Error", "Home");                
+                return RedirectToAction("Course", "Course");                
             }            
         }
         public string generateMaHD()
@@ -147,7 +149,7 @@ namespace DoAnLTWEB.Controllers
             catch (Exception ex)
             {
                 ViewBag.Error = ex.Message;
-                return RedirectToAction("Error","Home");
+                return RedirectToAction("Error", "User", new { error = ex.Message });
             }
         }
         

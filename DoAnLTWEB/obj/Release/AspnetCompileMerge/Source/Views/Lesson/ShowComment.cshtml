@@ -1,0 +1,21 @@
+﻿@model IEnumerable<DoAnLTWEB.Models.rateKhoaHoc>
+
+<div>
+    <div>
+        <ul>
+            @foreach (var comment in Model)
+            {
+                <li>
+                    <p>@comment.NguoiDung.HoTen</p>
+                    <p>@comment.Mota</p>
+                    @if (@comment.rateDate == null)
+                    {
+                        <small>@DateTime.Now.ToString("d")</small> }
+                    else
+                    {
+                        <small>@comment.rateDate</small>}
+                </li>
+            }
+        </ul>
+    </div>
+</div>

@@ -2233,7 +2233,9 @@ namespace DoAnLTWEB.Models
 		private EntitySet<CourseCart> _CourseCarts;
 		
 		private EntitySet<DanhGia> _DanhGias;
+        public HttpPostedFileBase imgFile { get; set; }
         public bool IsSelected { get; set; }
+
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
@@ -2440,8 +2442,7 @@ namespace DoAnLTWEB.Models
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="VarChar(50)")]
-        [Required]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Picture", DbType="VarChar(50)")]        
 		public string Picture
 		{
 			get

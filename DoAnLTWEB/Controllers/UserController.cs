@@ -57,7 +57,7 @@ namespace DoAnLTWEB.Controllers
                             }
                         }
                         Session["CourseIds"] = courseIds;                                                    
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("Course", "Course");
                     }                    
                 }
                 else
