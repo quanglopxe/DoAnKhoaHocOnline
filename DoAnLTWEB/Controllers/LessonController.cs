@@ -26,13 +26,13 @@ namespace DoAnLTWEB.Controllers
             {
                 int pageSize = 10;
                 int pageNumber = (page ?? 1);
-                var listBaiGiang = db.BaiGiangs.Where(c => c.MaKH == maKH && c.TrangThai == true).ToPagedList(pageNumber,pageSize);                
+                var listBaiGiang = db.BaiGiangs.Where(c => c.MaKH == maKH && c.TrangThai == true).ToPagedList(pageNumber,pageSize);
+                Session["MaKH"] = maKH;
                 ViewData["IsRegisterCourse"] = false;
                 if (listBaiGiang.Count > 0)
                 {                                        
                     NguoiDung nguoiDung = (NguoiDung)Session["User"];                    
-                    var listMaKH = Session["CourseIds"] as List<string>;                    
-                    var present = DateTime.Now;
+                    var listMaKH = Session["CourseIds"] as List<string>;                                        
 
                     if (nguoiDung != null)
                     {
@@ -54,7 +54,7 @@ namespace DoAnLTWEB.Controllers
                 return RedirectToAction("Error", "User", new { error = ex.Message });
             }
         }
-        
+        [CheckRegisteredCourse]
         public ActionResult LessonDetail(string maBG)
         {
             try

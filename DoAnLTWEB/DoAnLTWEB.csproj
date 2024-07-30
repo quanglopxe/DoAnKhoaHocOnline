@@ -218,6 +218,7 @@
     <Compile Include="Controllers\RoadmapController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Filter\CheckLoginAttribute.cs" />
+    <Compile Include="Filter\CheckRegisteredCourseAttribute.cs" />
     <Compile Include="Filter\CheckRoleAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
