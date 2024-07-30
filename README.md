@@ -7,7 +7,7 @@
 - [Cách sử dụng](#cách-sử-dụng)
 - [Tổng kết](#tổng-kết)
 ## Giới thiệu
-Mình xây dựng website này với mục đích là đăng tải các khóa học lên hoặc gán link khóa học trên youtube cho những bạn muốn học lập trình cơ bản, vì bản thân mình cũng là sinh viên năm 4 đang học lập trình
+Mình xây dựng website này với mục đích là đăng tải các video mình tự quay về chủ đề lập trình lên hoặc nhúng link khóa học trên youtube có liên quan đến khóa học để tạo thành các video bài giảng dành cho những bạn muốn học lập trình cơ bản, vì bản thân mình cũng là sinh viên năm 4 đang học lập trình
 nên những gì mình đã học được mình sẽ truyền đạt lại bằng cách đăng tải bài học lên website này để các bạn có thể học thêm được những kinh nghiệm và bài học mà mình đã trải qua.  
 Dự án được xây dựng với ASP.NET MVC và kết nối cơ sở dữ liệu với MS SQL bằng LINQ.  
 Vì đây là đồ án mình vẫn đang phát triển nên sẽ có thiếu sót và chưa hoàn thiện nên nếu có bất kì vấn đề gì, bạn có thể vào phần liên hệ trong website để trao đổi với mình.
