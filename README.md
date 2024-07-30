@@ -26,8 +26,8 @@ Về phía người dùng:
 - Quên mật khẩu (chưa xây dựng)
 
 Về phía quản trị viên:
-- CRUD khóa học
-- CRUD bài giảng
+- CRUD khóa học và khôi phục khóa học đã xóa
+- CRUD bài giảng và khôi phục bài giảng đã xóa
 - Chuyển đổi chế độ xem
 
 ## Cài đặt
