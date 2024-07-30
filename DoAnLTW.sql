@@ -197,16 +197,16 @@ set dateformat dmy
 select * from KhoaHoc
 insert into KhoaHoc(MaKH, TenKH, MoTaKH, GiangVien, NgayBD, NgayKT, GiaKhoaHoc, TenMonHoc, Picture)
 values
-('KH2023001',N'Khóa học Lập trình C',N'Khóa học này giúp bạn có thể tự lập trình được những phương thức xử lý dữ liệu bằng ngôn ngữ C','28tech','01/11/2023','31/12/2023',149000,N'Ngôn ngữ C','~/Content/Images/C.png'),
-('KH2023002',N'Khóa học Lập trình C++',N'Khóa học này giúp bạn có thể tự lập trình được những phương thức xử lý dữ liệu bằng ngôn ngữ C++','28tech','01/11/2023','31/12/2023',169000,N'Ngôn ngữ C++','~/Content/Images/CPlus.png'),
-('KH2023003',N'Khóa học Lập trình Java',N'Khóa học này giúp bạn có thể tự lập trình được những phương thức xử lý dữ liệu bằng ngôn ngữ Java','Kteam','01/11/2023','31/12/2023',169000,N'Ngôn ngữ Java','~/Content/Images/Java.png'),
-('KH2023004',N'Khóa học Lập trình Python',N'Khóa học này giúp bạn có thể tự lập trình được những phương thức xử lý dữ liệu bằng ngôn ngữ Python','Kteam','01/11/2023','31/12/2023',169000,N'Ngôn ngữ Python','~/Content/Images/Python.png'),
-('KH2023005',N'Khóa học Lập trình C#',N'Khóa học này giúp bạn có thể tự lập trình được những phương thức xử lý dữ liệu bằng ngôn ngữ C#','Kteam','01/11/2023','31/12/2023',179000,N'Ngôn ngữ C#','~/Content/Images/CSharp.png'),
-('KH2023006',N'Khóa học Lập trình Web',N'Khóa học này giúp bạn có thể tự lập trình được một trang web theo yêu cầu','ThuVienLapTrinh','01/11/2023','31/12/2023',249000,N'Lập trình Web','~/Content/Images/LTW.png'),
-('KH2023007',N'Khóa học Thiết kế Web',N'Khóa học này giúp bạn có thể tự thiết kế được một giao diện web theo yêu cầu','f8chanel','01/11/2023','31/12/2023',249000,N'Thiết kế Web','~/Content/Images/TKW.png'),
-('KH2023008',N'Khóa học Lập trình HTML và CSS',N'Khóa học này giúp bạn tìm hiểu và sử dụng thành thạo ngôn ngữ HTML và CSS','gola-goclamweb','01/11/2023','31/12/2023',179000,N'Ngôn ngữ HTML và CSS','~/Content/Images/cs1.png'),
-('KH2023009',N'Khóa học Lập trình JavaSript',N'Khóa học này giúp bạn tìm hiểu và sử dụng thành thạo ngôn ngữ JavaSript','f8chanel','01/11/2023','31/12/2023',149000,N'Ngôn ngữ JavaSript','~/Content/Images/cs2.png'),
-('KH2023010',N'Khóa học Bootstrap',N'Khóa học này giúp bạn tìm hiểu và sử dụng Bootstrap','f8chanel','01/11/2023','31/12/2023',149000,N'Giao diện Bootstrap','~/Content/Images/Bootstrap.png')
+('KH2023001',N'Khóa học Lập trình C',N'Khóa học này giúp bạn có thể tự lập trình được những phương thức xử lý dữ liệu bằng ngôn ngữ C','28tech',149000,N'Ngôn ngữ C','~/Content/Images/C.png'),
+('KH2023002',N'Khóa học Lập trình C++',N'Khóa học này giúp bạn có thể tự lập trình được những phương thức xử lý dữ liệu bằng ngôn ngữ C++','28tech',169000,N'Ngôn ngữ C++','~/Content/Images/CPlus.png'),
+('KH2023003',N'Khóa học Lập trình Java',N'Khóa học này giúp bạn có thể tự lập trình được những phương thức xử lý dữ liệu bằng ngôn ngữ Java','Kteam',169000,N'Ngôn ngữ Java','~/Content/Images/Java.png'),
+('KH2023004',N'Khóa học Lập trình Python',N'Khóa học này giúp bạn có thể tự lập trình được những phương thức xử lý dữ liệu bằng ngôn ngữ Python','Kteam',169000,N'Ngôn ngữ Python','~/Content/Images/Python.png'),
+('KH2023005',N'Khóa học Lập trình C#',N'Khóa học này giúp bạn có thể tự lập trình được những phương thức xử lý dữ liệu bằng ngôn ngữ C#','Kteam',179000,N'Ngôn ngữ C#','~/Content/Images/CSharp.png'),
+('KH2023006',N'Khóa học Lập trình Web',N'Khóa học này giúp bạn có thể tự lập trình được một trang web theo yêu cầu','ThuVienLapTrinh',249000,N'Lập trình Web','~/Content/Images/LTW.png'),
+('KH2023007',N'Khóa học Thiết kế Web',N'Khóa học này giúp bạn có thể tự thiết kế được một giao diện web theo yêu cầu','f8chanel',249000,N'Thiết kế Web','~/Content/Images/TKW.png'),
+('KH2023008',N'Khóa học Lập trình HTML và CSS',N'Khóa học này giúp bạn tìm hiểu và sử dụng thành thạo ngôn ngữ HTML và CSS','gola-goclamweb',179000,N'Ngôn ngữ HTML và CSS','~/Content/Images/cs1.png'),
+('KH2023009',N'Khóa học Lập trình JavaSript',N'Khóa học này giúp bạn tìm hiểu và sử dụng thành thạo ngôn ngữ JavaSript','f8chanel',149000,N'Ngôn ngữ JavaSript','~/Content/Images/cs2.png'),
+('KH2023010',N'Khóa học Bootstrap',N'Khóa học này giúp bạn tìm hiểu và sử dụng Bootstrap','f8chanel',149000,N'Giao diện Bootstrap','~/Content/Images/Bootstrap.png')
 
 set dateformat dmy
 insert into BaiGiang (MaBG, TieuDeBG, NoiDungBG, MaKH, ThuTuBaiHoc, Video)

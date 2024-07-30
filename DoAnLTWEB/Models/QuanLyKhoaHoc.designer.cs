@@ -1129,10 +1129,6 @@ namespace DoAnLTWEB.Models
 		
 		private string _GiangVien;
 		
-		private System.Nullable<System.DateTime> _NgayBD;
-		
-		private System.Nullable<System.DateTime> _NgayKT;
-		
 		private System.Nullable<decimal> _GiaKhoaHoc;
 		
 		private string _TenMonHoc;
@@ -1154,8 +1150,6 @@ namespace DoAnLTWEB.Models
             TenKH = kh.TenKH;
             MoTaKH = kh.MoTaKH;
             GiangVien = kh.GiangVien;
-            NgayBD = DateTime.Today;
-            NgayKT = DateTime.Today.AddMonths(6);
             GiaKhoaHoc = decimal.Parse(kh.GiaKhoaHoc.ToString());
             TenMonHoc = kh.TenMonHoc;
             Picture = kh.Picture;
@@ -1175,10 +1169,6 @@ namespace DoAnLTWEB.Models
     partial void OnMoTaKHChanged();
     partial void OnGiangVienChanging(string value);
     partial void OnGiangVienChanged();
-    partial void OnNgayBDChanging(System.Nullable<System.DateTime> value);
-    partial void OnNgayBDChanged();
-    partial void OnNgayKTChanging(System.Nullable<System.DateTime> value);
-    partial void OnNgayKTChanged();
     partial void OnGiaKhoaHocChanging(System.Nullable<decimal> value);
     partial void OnGiaKhoaHocChanged();
     partial void OnTenMonHocChanging(string value);
@@ -1302,47 +1292,7 @@ namespace DoAnLTWEB.Models
 					this.OnGiangVienChanged();
 				}
 			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayBD", DbType="Date")]
-		public System.Nullable<System.DateTime> NgayBD
-		{
-			get
-			{
-				return this._NgayBD;
-			}
-			set
-			{
-				if ((this._NgayBD != value))
-				{
-					this.OnNgayBDChanging(value);
-					this.SendPropertyChanging();
-					this._NgayBD = value;
-					this.SendPropertyChanged("NgayBD");
-					this.OnNgayBDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayKT", DbType="Date")]
-		public System.Nullable<System.DateTime> NgayKT
-		{
-			get
-			{
-				return this._NgayKT;
-			}
-			set
-			{
-				if ((this._NgayKT != value))
-				{
-					this.OnNgayKTChanging(value);
-					this.SendPropertyChanging();
-					this._NgayKT = value;
-					this.SendPropertyChanged("NgayKT");
-					this.OnNgayKTChanged();
-				}
-			}
-		}
+		}			
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GiaKhoaHoc", DbType="Money")]
 		public System.Nullable<decimal> GiaKhoaHoc
@@ -2210,10 +2160,6 @@ namespace DoAnLTWEB.Models
 		
 		private string _GiangVien;
 		
-		private System.Nullable<System.DateTime> _NgayBD;
-		
-		private System.Nullable<System.DateTime> _NgayKT;
-		
 		private System.Nullable<decimal> _GiaKhoaHoc;
 		
 		private string _TenMonHoc;
@@ -2248,11 +2194,7 @@ namespace DoAnLTWEB.Models
     partial void OnMoTaKHChanging(string value);
     partial void OnMoTaKHChanged();
     partial void OnGiangVienChanging(string value);
-    partial void OnGiangVienChanged();
-    partial void OnNgayBDChanging(System.Nullable<System.DateTime> value);
-    partial void OnNgayBDChanged();
-    partial void OnNgayKTChanging(System.Nullable<System.DateTime> value);
-    partial void OnNgayKTChanged();
+    partial void OnGiangVienChanged();            
     partial void OnGiaKhoaHocChanging(System.Nullable<decimal> value);
     partial void OnGiaKhoaHocChanged();
     partial void OnTenMonHocChanging(string value);
@@ -2357,47 +2299,7 @@ namespace DoAnLTWEB.Models
 					this.OnGiangVienChanged();
 				}
 			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayBD", DbType="Date")]
-		public System.Nullable<System.DateTime> NgayBD
-		{
-			get
-			{
-				return this._NgayBD;
-			}
-			set
-			{
-				if ((this._NgayBD != value))
-				{
-					this.OnNgayBDChanging(value);
-					this.SendPropertyChanging();
-					this._NgayBD = value;
-					this.SendPropertyChanged("NgayBD");
-					this.OnNgayBDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NgayKT", DbType="Date")]
-		public System.Nullable<System.DateTime> NgayKT
-		{
-			get
-			{
-				return this._NgayKT;
-			}
-			set
-			{
-				if ((this._NgayKT != value))
-				{
-					this.OnNgayKTChanging(value);
-					this.SendPropertyChanging();
-					this._NgayKT = value;
-					this.SendPropertyChanged("NgayKT");
-					this.OnNgayKTChanged();
-				}
-			}
-		}
+		}				
 		
 		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_GiaKhoaHoc", DbType="Money")]
         [Required]

@@ -229,6 +229,7 @@
     </Compile>
     <Compile Include="Payment\VnPayLibrary.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\LessonDetailViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />

@@ -83,13 +83,6 @@ namespace DoAnLTWEB.Controllers
                     }
                 }
 
-                //Set thời gian khóa học
-                var listKH = db.KhoaHocs.Where(c => courseIds.Contains(c.MaKH)).ToList();
-                foreach(var kh in listKH)
-                {
-                    kh.NgayBD = DateTime.Now;
-                    kh.NgayKT = DateTime.Now.AddMonths(6);                                        
-                }
                 db.SubmitChanges();
                 //Cập nhật lại giỏ hàng
                 return RedirectToAction("XoaMyCoursesAll", "MyCourses");

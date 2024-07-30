@@ -9,7 +9,7 @@ using System.Text.RegularExpressions;
 using DoAnLTWEB.Filter;
 using PagedList;
 using System.Web;
-
+using DoAnLTWEB.ViewModels;
 
 namespace DoAnLTWEB.Controllers
 {    
@@ -30,18 +30,13 @@ namespace DoAnLTWEB.Controllers
                 ViewData["IsRegisterCourse"] = false;
                 if (listBaiGiang.Count > 0)
                 {                                        
-                    NguoiDung nguoiDung = (NguoiDung)Session["User"];
-                    KhoaHoc course = db.KhoaHocs.FirstOrDefault(c => c.MaKH == maKH);
+                    NguoiDung nguoiDung = (NguoiDung)Session["User"];                    
                     var listMaKH = Session["CourseIds"] as List<string>;                    
                     var present = DateTime.Now;
 
                     if (nguoiDung != null)
                     {
-                        HoaDonDky dKyKhoaHoc = db.HoaDonDkies.FirstOrDefault(t => t.MaND == nguoiDung.MaND);
-                        if(present == course.NgayKT)
-                        {
-                            ViewData["IsRegisterCourse"] = false;
-                        }
+                        HoaDonDky dKyKhoaHoc = db.HoaDonDkies.FirstOrDefault(t => t.MaND == nguoiDung.MaND);                        
                         if(dKyKhoaHoc != null && listMaKH != null && listMaKH.Contains(maKH))
                         {
                             ViewData["IsRegisterCourse"] = true;
@@ -64,19 +59,26 @@ namespace DoAnLTWEB.Controllers
         {
             try
             {
-                var baiGiang = db.BaiGiangs.FirstOrDefault(m => m.MaBG == maBG);
-                var videoType = baiGiang.Video.Substring(0, 5);
+                var lesson = db.BaiGiangs.FirstOrDefault(m => m.MaBG == maBG);
+                if (lesson == null)
+                {
+                    return RedirectToAction("Error", "User", new { error = "Không tìm thấy bài giảng " + maBG });
+                }                
+                var listBaiGiang = db.BaiGiangs.Where(bg => bg.MaKH == lesson.MaKH).ToList();
+                var viewModel = new LessonDetailViewModel()
+                {
+                    baiGiang = lesson,
+                    listBG = listBaiGiang
+                };
+
+                var videoType = lesson.Video.Substring(0, 5);
                 ViewBag.VideoType = videoType;                
                 if(videoType == "https")
                 {
-                    ViewBag.Video = GetEmbedYouTubeLink(baiGiang.Video);
+                    ViewBag.Video = GetEmbedYouTubeLink(lesson.Video);
                 }                
-                if (baiGiang == null)
-                {
-                    return RedirectToAction("Error", "User", new { error = "Không tìm thấy bài giảng " + maBG });
-                }
-
-                return View(baiGiang);
+                
+                return View(viewModel);
             }
             catch (Exception ex)
             {

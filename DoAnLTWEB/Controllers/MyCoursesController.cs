@@ -58,6 +58,7 @@ namespace DoAnLTWEB.Controllers
         public ActionResult MyCourses()
         {            
             List<CourseCart> listMyCourses = GetMyCourses();
+            ViewBag.TongSoLuong = TongSoLuong();
             ViewBag.TongThanhTien = TongThanhTien();
             return View(listMyCourses);
         }

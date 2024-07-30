@@ -126,36 +126,23 @@
                         <div class="sidebar_top">
                             <ul>
                                 <li>
-                                    <div class="justify-content-between d-flex" href="#">
+                                    <div class="justify-content-between d-flex">
                                         <p>Tên khóa học</p>
                                         <span class="color">@khoahoc.TenKH</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="justify-content-between d-flex" href="#">
+                                    <div class="justify-content-between d-flex">
                                         <p>Giảng Viên </p>
                                         <span>@khoahoc.GiangVien</span>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="justify-content-between d-flex" href="#">
+                                    <div class="justify-content-between d-flex">
                                         <p>Giá </p>
                                         <span>@khoahoc.GiaKhoaHoc</span>
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="justify-content-between d-flex" href="#">
-                                        <p>Ngày bắt đầu </p>
-                                        <span>@String.Format("{0:dd/MM/yyyy}", khoahoc.NgayBD)</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="justify-content-between d-flex" href="#">
-                                        <p>Ngày kết thúc </p>
-                                        <span>@String.Format("{0:dd/MM/yyyy}", khoahoc.NgayKT)</span>
-                                    </div>
-                                </li>
-
+                                </li>                                
                             </ul>
                             @if (Session["User"] != null && !isRegisterCourse && Session["Roles"] != "Admin")
                             {
@@ -194,6 +181,7 @@
         var modal = $(this);
         modal.find('#modalTenBG-' + MABG).text(TenBG);
     });
+
     $(document).on('click', '.DangKy', function () {
         var currentUrl = $(this).data("url")
         var arrURL = currentUrl.split('/')
@@ -206,8 +194,8 @@
             success: function (success) {
                 if (success) {
                     $.toast({
-                        heading: 'Success',
-                        text: 'Đăng ký thành công',
+                        heading: 'Thêm thành công',
+                        text: 'Đã thêm khóa học vào danh sách khóa học cần thanh toán',
                         showHideTransition: 'fade',
                         position: 'top-right',
                         icon: 'success',

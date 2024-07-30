@@ -75,8 +75,6 @@ namespace DoAnLTWEB.Controllers
 
                 khoaHoc.Picture = "~/Content/Images/" + fileName;
                 khoaHoc.MaKH = generateMaKH();
-                khoaHoc.NgayBD = DateTime.Today;
-                khoaHoc.NgayKT = DateTime.Today.AddMonths(6);
                 khoaHoc.TrangThai = true;
                 db.KhoaHocs.InsertOnSubmit(khoaHoc);
                 db.SubmitChanges();
