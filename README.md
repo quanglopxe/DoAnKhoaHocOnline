@@ -23,7 +23,8 @@ Về phía người dùng:
 - Xem các bài giảng của các khóa học đã đăng ký
 - Chỉnh sửa thông tin cá nhân
 - Bình luận (chưa xây dựng)
-- Quên mật khẩu (chưa xây dựng)  
+- Quên mật khẩu (chưa xây dựng)
+
 Về phía quản trị viên:
 - CRUD khóa học
 - CRUD bài giảng
