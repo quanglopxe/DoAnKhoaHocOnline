@@ -12,8 +12,7 @@
     <title>@ViewData["Title"] - Đăng nhập</title>
 
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/css/style.css" rel="stylesheet">
-    <link href="~/Content/css/styleLesson.css" rel="stylesheet">
+    <link href="~/Content/css/styleLesson.css" rel="stylesheet">    
 </head>
 <body>
     <div class="container-fluid">
@@ -32,13 +31,13 @@
                         <div class="card-body rounded p-5" style="background-color:lightblue">
                             <form action="/User/Login" method="post">
                                 <div class="form-group">
-                                    <input name="TenND" type="text" class="form-control border-0 p-4" placeholder="Tên người dùng" required="required" />
+                                    <input name="TenND" type="text" class="form-control border-0 p-4 mb-2" style="height:35px" placeholder="Tên người dùng" required="required" />
                                 </div>
                                 <div class="form-group">
-                                    <input name="MatKhau" type="password" class="form-control border-0 p-4" placeholder="Mật khẩu" required="required" />
+                                    <input name="MatKhau" type="password" class="form-control border-0 p-4 mb-2" style="height:35px" placeholder="Mật khẩu" required="required" />
                                 </div>
                                 <div>
-                                    <button class="btn btn-dark btn-block border-0 py-3" type="submit">Đăng nhập</button>
+                                    <center><button class="btn btn-dark btn-block border-0 py-3" style="width:100%" type="submit">Đăng nhập</button></center>
                                 </div>
                                 <div class="pt-2">
                                     <div style="color:black; width: fit-content; margin-right: auto; margin-left: auto;">

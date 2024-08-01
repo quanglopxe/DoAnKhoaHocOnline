@@ -1,8 +1,8 @@
 ﻿@model IEnumerable<DoAnLTWEB.Models.KhoaHoc>
-<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+@*<link href="~/Content/bootstrap.min.css" rel="stylesheet" />*@
 
-<li class="list-group-item bg-warning text-white" style="font-weight: bold;">CHỦ ĐỀ MÔN HỌC</li>
 @foreach (var item in Model)
 {
-    <li><a href="@Url.Action("CourseWithSubjectTitle", "Course", new { TenMH = item.TenMonHoc })" class="list-group-item" style="text-transform:uppercase">@Html.DisplayFor(modelItem => item.TenMonHoc)</a></li>
+    <li><a href="@Url.Action("CourseWithSubjectTitle", "Course", new { TenMH = item.TenMonHoc })" class="dropdown-item" style="text-transform:uppercase; height: 50px; border-bottom: 1px solid gray">@Html.DisplayFor(modelItem => item.TenMonHoc)</a></li>    
+    
 }

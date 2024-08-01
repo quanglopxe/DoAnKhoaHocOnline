@@ -12,43 +12,49 @@
     <nav class="navbar navbar-expand-sm bg-white" style="position:fixed;top:0;z-index:2;width:100%">
         <div class="container-fluid">
             <a class="navbar-brand"><img src="~/Content/Images/logo.png" alt="CourseLogo" style="width:200px;height:40px" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="mynavbar">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Admin/AdminCourse">Quản lý khóa học</a>
-                    </li>                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="/User/Logout">Đăng xuất</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control" type="text" placeholder="Search">
-                    <div class="input-group-btn">
-                        <button class="btn btn-default" type="submit">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" style="margin-left: 5px; margin-right:5px;" viewBox="0 0 16 16" style="">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                            </svg>
-                        </button>
-                    </div>
-                    @if (Session["Roles"] == "Admin")
-                    {
-                        <div class="dropdown">
-                            <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">
-                                Chế độ xem
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-f flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Admin/AdminCourse">Quản lý khóa học</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/User/Logout">Đăng xuất</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control" type="text" placeholder="Search">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" style="margin-left: 5px; margin-right:5px;" viewBox="0 0 16 16" style="">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
                             </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/Course/Course">User</a></li>
-                                <li><a class="dropdown-item" href="/Admin/AdminCourse">Admin</a></li>
-                            </ul>
                         </div>
-                    }
-                </form>
+                        @if (Session["Roles"] == "Admin")
+                        {
+                            <div class="dropdown">
+                                <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">
+                                    Chế độ xem
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/Course/Course">User</a></li>
+                                    <li><a class="dropdown-item" href="/Admin/AdminCourse">Admin</a></li>
+                                </ul>
+                            </div>
+                        }
+                    </form>
+                </div>
             </div>
         </div>
-    </nav>
+</nav>
     <div class="container-fluid" style="height: auto; position: relative; top: 35px;" >
         <div class="row">
 

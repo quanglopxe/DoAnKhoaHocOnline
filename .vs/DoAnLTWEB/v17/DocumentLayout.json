@@ -3,56 +3,72 @@
   "WorkspaceRootPath": "G:\\HK5\\LTWEB\\DoAnLTWEB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|g:\\hk5\\ltweb\\doanltweb\\doanltweb\\filter\\checkregisteredcourseattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\filter\\checkregisteredcourseattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\filter\\checkloginattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\filter\\checkloginattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\home\\info.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\home\\info.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|g:\\hk5\\ltweb\\doanltweb\\doanltweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\controllers\\mycoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\controllers\\mycoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\course\\registerdcourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\course\\registerdcourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\mycourses\\mycourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\mycourses\\mycourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\course\\registerdcoursespartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\course\\registerdcoursespartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\models\\quanlykhoahoc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\models\\quanlykhoahoc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\shared\\_layoutuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\shared\\_layoutuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\course\\registerdcourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\course\\registerdcourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|g:\\hk5\\ltweb\\doanltweb\\doanltweb\\views\\shared\\_layouthome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\shared\\_layouthome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\course\\coursewithsearchstring.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\course\\coursewithsearchstring.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\course\\course.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\course\\course.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|g:\\hk5\\ltweb\\doanltweb\\doanltweb\\views\\roadmap\\roadmap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\roadmap\\roadmap.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\course\\sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\course\\sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\user\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\user\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\user\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\user\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|g:\\hk5\\ltweb\\doanltweb\\doanltweb\\views\\roadmap\\roadmapfe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\roadmap\\roadmapfe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|g:\\hk5\\ltweb\\doanltweb\\doanltweb\\views\\roadmap\\roadmapbe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\roadmap\\roadmapbe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|g:\\hk5\\ltweb\\doanltweb\\doanltweb\\views\\lesson\\showcomment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\lesson\\showcomment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\lesson\\lessondetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -63,8 +79,64 @@
       "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\lesson\\lesson.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\course\\course.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\course\\course.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\home\\info.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\home\\info.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\course\\coursewithsubjecttitle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\course\\coursewithsubjecttitle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\admin\\admincourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\admin\\admincourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|g:\\hk5\\ltweb\\doanltweb\\doanltweb\\content\\css\\stylelesson.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\content\\css\\stylelesson.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\filter\\checkregisteredcourseattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\filter\\checkregisteredcourseattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\filter\\checkloginattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\filter\\checkloginattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\controllers\\mycoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\controllers\\mycoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\models\\quanlykhoahoc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\models\\quanlykhoahoc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,10 +155,6 @@
       "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\admin\\createcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\admin\\admincourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\admin\\admincourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\filter\\checkroleattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\filter\\checkroleattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -103,32 +171,12 @@
       "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\mycourses\\mycoursespartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\shared\\_layouthome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\shared\\_layouthome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\course\\coursewithsubjecttitle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\course\\coursewithsubjecttitle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\admin\\editlesson.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\admin\\editlesson.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\shared\\_layoutuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\shared\\_layoutuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\controllers\\roadmapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\controllers\\roadmapcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\course\\sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\course\\sidebar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\payment\\vnpaylibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -145,42 +193,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\admin\\recovercourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\admin\\recovercourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\course\\registerdcoursespartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\course\\registerdcoursespartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\user\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\user\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\course\\coursewithsearchstring.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\course\\coursewithsearchstring.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\user\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\user\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\home\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\home\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|G:\\HK5\\LTWEB\\DoAnLTWEB\\doanltweb\\views\\home\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{877BAE1A-6FCA-44C4-BA2E-882BD37424FB}|DoAnLTWEB\\DoAnLTWEB.csproj|solutionrelative:doanltweb\\views\\home\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -190,24 +202,232 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CourseWithSearchString.cshtml",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\CourseWithSearchString.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Course\\CourseWithSearchString.cshtml",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\CourseWithSearchString.cshtml",
+              "RelativeToolTip": "DoAnLTWEB\\Views\\Course\\CourseWithSearchString.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-17T06:20:47.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Course.cshtml",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\Course.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Course\\Course.cshtml",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\Course.cshtml",
+              "RelativeToolTip": "DoAnLTWEB\\Views\\Course\\Course.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACEAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-29T12:15:32.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegisterdCourses.cshtml",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\RegisterdCourses.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Course\\RegisterdCourses.cshtml",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\RegisterdCourses.cshtml",
+              "RelativeToolTip": "DoAnLTWEB\\Views\\Course\\RegisterdCourses.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-20T16:14:53.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegisterdCoursesPartial.cshtml",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\RegisterdCoursesPartial.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Course\\RegisterdCoursesPartial.cshtml",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\RegisterdCoursesPartial.cshtml",
+              "RelativeToolTip": "DoAnLTWEB\\Views\\Course\\RegisterdCoursesPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-20T16:23:05.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CheckRegisteredCourseAttribute.cs",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Filter\\CheckRegisteredCourseAttribute.cs",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Filter\\CheckRegisteredCourseAttribute.cs",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Filter\\CheckRegisteredCourseAttribute.cs",
-              "RelativeToolTip": "DoAnLTWEB\\Filter\\CheckRegisteredCourseAttribute.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-30T16:18:53.723Z",
+              "Title": "MyCourses.cshtml",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\MyCourses\\MyCourses.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\MyCourses\\MyCourses.cshtml",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\MyCourses\\MyCourses.cshtml",
+              "RelativeToolTip": "DoAnLTWEB\\Views\\MyCourses\\MyCourses.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABEAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-20T10:26:35.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_LayoutUser.cshtml",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Shared\\_LayoutUser.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Shared\\_LayoutUser.cshtml",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Shared\\_LayoutUser.cshtml",
+              "RelativeToolTip": "DoAnLTWEB\\Views\\Shared\\_LayoutUser.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABMAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-29T06:23:10.975Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "_LayoutHome.cshtml",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Shared\\_LayoutHome.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Shared\\_LayoutHome.cshtml",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Shared\\_LayoutHome.cshtml",
+              "RelativeToolTip": "DoAnLTWEB\\Views\\Shared\\_LayoutHome.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T17:19:07.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_LayoutAdmin.cshtml",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "RelativeToolTip": "DoAnLTWEB\\Views\\Shared\\_LayoutAdmin.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T07:55:18.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Roadmap.cshtml",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Roadmap\\Roadmap.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Roadmap\\Roadmap.cshtml",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Roadmap\\Roadmap.cshtml",
+              "RelativeToolTip": "DoAnLTWEB\\Views\\Roadmap\\Roadmap.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-01T06:09:31.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SideBar.cshtml",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\SideBar.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Course\\SideBar.cshtml",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\SideBar.cshtml",
+              "RelativeToolTip": "DoAnLTWEB\\Views\\Course\\SideBar.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAACXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-17T05:43:36.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\User\\Login.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\User\\Login.cshtml",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\User\\Login.cshtml",
+              "RelativeToolTip": "DoAnLTWEB\\Views\\User\\Login.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-18T10:10:51.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EditProfile.cshtml",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\User\\EditProfile.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\User\\EditProfile.cshtml",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\User\\EditProfile.cshtml",
+              "RelativeToolTip": "DoAnLTWEB\\Views\\User\\EditProfile.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-19T06:28:13.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\User\\Error.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\User\\Error.cshtml",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\User\\Error.cshtml",
+              "RelativeToolTip": "DoAnLTWEB\\Views\\User\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-16T13:45:41.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\User\\Register.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\User\\Register.cshtml",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\User\\Register.cshtml",
+              "RelativeToolTip": "DoAnLTWEB\\Views\\User\\Register.cshtml",
+              "ViewState": "AQIAACkAAAAAAAAAAAAAADcAAABzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-12T06:15:20.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RoadmapFE.cshtml",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Roadmap\\RoadmapFE.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Roadmap\\RoadmapFE.cshtml",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Roadmap\\RoadmapFE.cshtml",
+              "RelativeToolTip": "DoAnLTWEB\\Views\\Roadmap\\RoadmapFE.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-01T06:09:43.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RoadmapBE.cshtml",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Roadmap\\RoadmapBE.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Roadmap\\RoadmapBE.cshtml",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Roadmap\\RoadmapBE.cshtml",
+              "RelativeToolTip": "DoAnLTWEB\\Views\\Roadmap\\RoadmapBE.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-01T06:09:38.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ShowComment.cshtml",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Lesson\\ShowComment.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Lesson\\ShowComment.cshtml",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Lesson\\ShowComment.cshtml",
+              "RelativeToolTip": "DoAnLTWEB\\Views\\Lesson\\ShowComment.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-01T06:09:00.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Info.cshtml",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Home\\Info.cshtml",
               "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Home\\Info.cshtml",
@@ -220,33 +440,111 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CheckLoginAttribute.cs",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Filter\\CheckLoginAttribute.cs",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Filter\\CheckLoginAttribute.cs",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Filter\\CheckLoginAttribute.cs",
-              "RelativeToolTip": "DoAnLTWEB\\Filter\\CheckLoginAttribute.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T10:10:44.044Z",
+              "DocumentIndex": 18,
+              "Title": "Lesson.cshtml",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Lesson\\Lesson.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Lesson\\Lesson.cshtml",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Lesson\\Lesson.cshtml",
+              "RelativeToolTip": "DoAnLTWEB\\Views\\Lesson\\Lesson.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACgAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-12T13:22:35.079Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 17,
+              "Title": "LessonDetail.cshtml",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Lesson\\LessonDetail.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Lesson\\LessonDetail.cshtml",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Lesson\\LessonDetail.cshtml",
+              "RelativeToolTip": "DoAnLTWEB\\Views\\Lesson\\LessonDetail.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-25T08:45:12.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CourseWithSubjectTitle.cshtml",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\CourseWithSubjectTitle.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Course\\CourseWithSubjectTitle.cshtml",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\CourseWithSubjectTitle.cshtml",
+              "RelativeToolTip": "DoAnLTWEB\\Views\\Course\\CourseWithSubjectTitle.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-16T13:43:53.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AdminCourse.cshtml",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Admin\\AdminCourse.cshtml",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Admin\\AdminCourse.cshtml",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Admin\\AdminCourse.cshtml",
+              "RelativeToolTip": "DoAnLTWEB\\Views\\Admin\\AdminCourse.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-21T11:50:29.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "style.css",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Content\\css\\style.css",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Content\\css\\style.css",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Content\\css\\style.css",
+              "RelativeToolTip": "DoAnLTWEB\\Content\\css\\style.css",
+              "ViewState": "AQIAAJMAAAAAAAAAAAAAAB0JAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-19T05:57:53.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "LessonController.cs",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Controllers\\LessonController.cs",
               "RelativeDocumentMoniker": "DoAnLTWEB\\Controllers\\LessonController.cs",
               "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Controllers\\LessonController.cs",
               "RelativeToolTip": "DoAnLTWEB\\Controllers\\LessonController.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAwwCYAAABqAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAkwBYAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-11T15:19:42.348Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 22,
+              "Title": "styleLesson.css",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Content\\css\\styleLesson.css",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Content\\css\\styleLesson.css",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Content\\css\\styleLesson.css",
+              "RelativeToolTip": "DoAnLTWEB\\Content\\css\\styleLesson.css",
+              "ViewState": "AQIAAMcGAAAAAAAAAAAwwOEGAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-01T05:11:27.897Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Controllers\\CourseController.cs",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "DoAnLTWEB\\Controllers\\CourseController.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAcwEsAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T12:46:21.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "UserController.cs",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "DoAnLTWEB\\Controllers\\UserController.cs",
@@ -259,7 +557,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 28,
+              "Title": "CheckLoginAttribute.cs",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Filter\\CheckLoginAttribute.cs",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Filter\\CheckLoginAttribute.cs",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Filter\\CheckLoginAttribute.cs",
+              "RelativeToolTip": "DoAnLTWEB\\Filter\\CheckLoginAttribute.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-12T10:10:44.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CheckRegisteredCourseAttribute.cs",
+              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Filter\\CheckRegisteredCourseAttribute.cs",
+              "RelativeDocumentMoniker": "DoAnLTWEB\\Filter\\CheckRegisteredCourseAttribute.cs",
+              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Filter\\CheckRegisteredCourseAttribute.cs",
+              "RelativeToolTip": "DoAnLTWEB\\Filter\\CheckRegisteredCourseAttribute.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T16:18:53.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "HomeController.cs",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "DoAnLTWEB\\Controllers\\HomeController.cs",
@@ -267,12 +589,11 @@
               "RelativeToolTip": "DoAnLTWEB\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T12:55:56.193Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-08T12:55:56.193Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 32,
               "Title": "QuanLyKhoaHoc.designer.cs",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Models\\QuanLyKhoaHoc.designer.cs",
               "RelativeDocumentMoniker": "DoAnLTWEB\\Models\\QuanLyKhoaHoc.designer.cs",
@@ -284,7 +605,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 30,
               "Title": "Web.config",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Web.config",
               "RelativeDocumentMoniker": "DoAnLTWEB\\Web.config",
@@ -297,19 +618,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MyCourses.cshtml",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\MyCourses\\MyCourses.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\MyCourses\\MyCourses.cshtml",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\MyCourses\\MyCourses.cshtml",
-              "RelativeToolTip": "DoAnLTWEB\\Views\\MyCourses\\MyCourses.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAADQAAABZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-20T10:26:35.982Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 33,
               "Title": "PaymentController.cs",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Controllers\\PaymentController.cs",
               "RelativeDocumentMoniker": "DoAnLTWEB\\Controllers\\PaymentController.cs",
@@ -321,7 +630,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 31,
               "Title": "MyCoursesController.cs",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Controllers\\MyCoursesController.cs",
               "RelativeDocumentMoniker": "DoAnLTWEB\\Controllers\\MyCoursesController.cs",
@@ -333,67 +642,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RegisterdCourses.cshtml",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\RegisterdCourses.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Course\\RegisterdCourses.cshtml",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\RegisterdCourses.cshtml",
-              "RelativeToolTip": "DoAnLTWEB\\Views\\Course\\RegisterdCourses.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABRAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-20T16:14:53.841Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CourseController.cs",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Controllers\\CourseController.cs",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Controllers\\CourseController.cs",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Controllers\\CourseController.cs",
-              "RelativeToolTip": "DoAnLTWEB\\Controllers\\CourseController.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAowBsAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-08T12:46:21.001Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "LessonDetail.cshtml",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Lesson\\LessonDetail.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Lesson\\LessonDetail.cshtml",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Lesson\\LessonDetail.cshtml",
-              "RelativeToolTip": "DoAnLTWEB\\Views\\Lesson\\LessonDetail.cshtml",
-              "ViewState": "AQIAABwAAAAAAAAAAAAAAEYAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-25T08:45:12.394Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Lesson.cshtml",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Lesson\\Lesson.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Lesson\\Lesson.cshtml",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Lesson\\Lesson.cshtml",
-              "RelativeToolTip": "DoAnLTWEB\\Views\\Lesson\\Lesson.cshtml",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAWwIAAAABPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-12T13:22:35.079Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Course.cshtml",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\Course.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Course\\Course.cshtml",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\Course.cshtml",
-              "RelativeToolTip": "DoAnLTWEB\\Views\\Course\\Course.cshtml",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAAACMAAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-29T12:15:32.282Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 34,
               "Title": "AdminController.cs",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "DoAnLTWEB\\Controllers\\AdminController.cs",
@@ -405,7 +654,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 35,
               "Title": "EditCourse.cshtml",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Admin\\EditCourse.cshtml",
               "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Admin\\EditCourse.cshtml",
@@ -417,7 +666,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 36,
               "Title": "CreateLesson.cshtml",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Admin\\CreateLesson.cshtml",
               "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Admin\\CreateLesson.cshtml",
@@ -429,7 +678,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 37,
               "Title": "CreateCourse.cshtml",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Admin\\CreateCourse.cshtml",
               "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Admin\\CreateCourse.cshtml",
@@ -441,19 +690,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AdminCourse.cshtml",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Admin\\AdminCourse.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Admin\\AdminCourse.cshtml",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Admin\\AdminCourse.cshtml",
-              "RelativeToolTip": "DoAnLTWEB\\Views\\Admin\\AdminCourse.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-21T11:50:29.474Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 38,
               "Title": "CheckRoleAttribute.cs",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Filter\\CheckRoleAttribute.cs",
               "RelativeDocumentMoniker": "DoAnLTWEB\\Filter\\CheckRoleAttribute.cs",
@@ -465,7 +702,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 39,
               "Title": "LessonDetailViewModel.cs",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\ViewModels\\LessonDetailViewModel.cs",
               "RelativeDocumentMoniker": "DoAnLTWEB\\ViewModels\\LessonDetailViewModel.cs",
@@ -477,7 +714,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 40,
               "Title": "ViewSoLuong.cshtml",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\MyCourses\\ViewSoLuong.cshtml",
               "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\MyCourses\\ViewSoLuong.cshtml",
@@ -489,7 +726,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 41,
               "Title": "MyCoursesPartial.cshtml",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\MyCourses\\MyCoursesPartial.cshtml",
               "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\MyCourses\\MyCoursesPartial.cshtml",
@@ -501,31 +738,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "_LayoutHome.cshtml",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Shared\\_LayoutHome.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Shared\\_LayoutHome.cshtml",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Shared\\_LayoutHome.cshtml",
-              "RelativeToolTip": "DoAnLTWEB\\Views\\Shared\\_LayoutHome.cshtml",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAADAAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-23T17:19:07.668Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "CourseWithSubjectTitle.cshtml",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\CourseWithSubjectTitle.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Course\\CourseWithSubjectTitle.cshtml",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\CourseWithSubjectTitle.cshtml",
-              "RelativeToolTip": "DoAnLTWEB\\Views\\Course\\CourseWithSubjectTitle.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-16T13:43:53.905Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 42,
               "Title": "EditLesson.cshtml",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Admin\\EditLesson.cshtml",
               "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Admin\\EditLesson.cshtml",
@@ -537,31 +750,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "_LayoutUser.cshtml",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Shared\\_LayoutUser.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Shared\\_LayoutUser.cshtml",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Shared\\_LayoutUser.cshtml",
-              "RelativeToolTip": "DoAnLTWEB\\Views\\Shared\\_LayoutUser.cshtml",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAACwAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-29T06:23:10.975Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "_LayoutAdmin.cshtml",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "RelativeToolTip": "DoAnLTWEB\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAA0AAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-23T07:55:18.506Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 43,
               "Title": "RoadmapController.cs",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Controllers\\RoadmapController.cs",
               "RelativeDocumentMoniker": "DoAnLTWEB\\Controllers\\RoadmapController.cs",
@@ -573,19 +762,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "SideBar.cshtml",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\SideBar.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Course\\SideBar.cshtml",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\SideBar.cshtml",
-              "RelativeToolTip": "DoAnLTWEB\\Views\\Course\\SideBar.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-17T05:43:36.991Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 44,
               "Title": "VnPayLibrary.cs",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Payment\\VnPayLibrary.cs",
               "RelativeDocumentMoniker": "DoAnLTWEB\\Payment\\VnPayLibrary.cs",
@@ -597,7 +774,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 47,
               "Title": "RecoverCourse.cshtml",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Admin\\RecoverCourse.cshtml",
               "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Admin\\RecoverCourse.cshtml",
@@ -609,7 +786,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 45,
               "Title": "web.config",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\web.config",
               "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\web.config",
@@ -621,7 +798,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 46,
               "Title": "RecoverLesson.cshtml",
               "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Admin\\RecoverLesson.cshtml",
               "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Admin\\RecoverLesson.cshtml",
@@ -630,114 +807,6 @@
               "ViewState": "AQIAABwAAAAAAAAAAAAAACsAAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-27T08:21:19.573Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "RegisterdCoursesPartial.cshtml",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\RegisterdCoursesPartial.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Course\\RegisterdCoursesPartial.cshtml",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\RegisterdCoursesPartial.cshtml",
-              "RelativeToolTip": "DoAnLTWEB\\Views\\Course\\RegisterdCoursesPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-20T16:23:05.429Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\User\\Login.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\User\\Login.cshtml",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\User\\Login.cshtml",
-              "RelativeToolTip": "DoAnLTWEB\\Views\\User\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-18T10:10:51.065Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\User\\Register.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\User\\Register.cshtml",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\User\\Register.cshtml",
-              "RelativeToolTip": "DoAnLTWEB\\Views\\User\\Register.cshtml",
-              "ViewState": "AQIAABsAAAAAAAAAAAAAADIAAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-12T06:15:20.482Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "EditProfile.cshtml",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\User\\EditProfile.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\User\\EditProfile.cshtml",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\User\\EditProfile.cshtml",
-              "RelativeToolTip": "DoAnLTWEB\\Views\\User\\EditProfile.cshtml",
-              "ViewState": "AQIAACkAAAAAAAAAAAAlwDkAAABXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-19T06:28:13.732Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "style.css",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Content\\css\\style.css",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Content\\css\\style.css",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Content\\css\\style.css",
-              "RelativeToolTip": "DoAnLTWEB\\Content\\css\\style.css",
-              "ViewState": "AQIAAFkBAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-19T05:57:53.226Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "CourseWithSearchString.cshtml",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\CourseWithSearchString.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Course\\CourseWithSearchString.cshtml",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Course\\CourseWithSearchString.cshtml",
-              "RelativeToolTip": "DoAnLTWEB\\Views\\Course\\CourseWithSearchString.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-17T06:20:47.228Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\User\\Error.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\User\\Error.cshtml",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\User\\Error.cshtml",
-              "RelativeToolTip": "DoAnLTWEB\\Views\\User\\Error.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-16T13:45:41.341Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "Index1.cshtml",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Home\\Index1.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Home\\Index1.cshtml",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Home\\Index1.cshtml",
-              "RelativeToolTip": "DoAnLTWEB\\Views\\Home\\Index1.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-16T13:44:52.634Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Home\\Error.cshtml",
-              "RelativeDocumentMoniker": "DoAnLTWEB\\Views\\Home\\Error.cshtml",
-              "ToolTip": "G:\\HK5\\LTWEB\\DoAnLTWEB\\DoAnLTWEB\\Views\\Home\\Error.cshtml",
-              "RelativeToolTip": "DoAnLTWEB\\Views\\Home\\Error.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-16T13:38:30.875Z"
             }
           ]
         }
