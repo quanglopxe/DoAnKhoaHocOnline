@@ -35,11 +35,6 @@ Sau khi các bạn tải file nén về thì hãy giải nén ra và mở file d
 và đồng thời bạn cần phải tải các package cần thiết, sau đó bạn có thể dễ dàng Run dự án trên localhost.
 
 ## Cách sử dụng
-Mình đã publish dự án với SmarterASP - trang web này hỗ trợ free 2 tháng nên có yêu cầu nhập tài khoản và mật khẩu khi truy cập, sau đây là thông tin chi tiết:  
-Url Web: http://quang123-001-site1.htempurl.com/  
-Bạn cần nhập username và password để có thể truy cập vào web:  
-User Name: 11188235  
-Password: 60-dayfreetrial  
 Web có tích hợp tính năng thanh toán bằng VnPay demo, vì vậy khi thanh toán bạn hãy dùng tài khoản demo này để thanh toán nhé:  
   Ngân hàng: NCB  
   Số thẻ: 9704198526191432198  
